@@ -269,7 +269,7 @@ export function Layout({ children }) {
         <div className="wrap">
           <span>HA PostgreSQL on Ceph · CloudNativePG, Rook-Ceph, PgBouncer, HAProxy on Kubernetes</span>
           <span className="contact-links">Questions, findings or corrections:{" "}
-            <a href="mailto:sweshiknagulapelly@gmail.com" title="sweshiknagulapelly@gmail.com">Email</a>
+            <a href="mailto:nagulapellysweshik@gmail.com" title="nagulapellysweshik@gmail.com">Email</a>
             {" · "}<a href="https://www.linkedin.com/in/nagulapelly-sweshik/" target="_blank" rel="noreferrer">LinkedIn</a>
             {" · "}<a href="https://github.com/Nagulapellysweshik/HA-postgresSQL-on-Ceph" target="_blank" rel="noreferrer">GitHub</a></span>
         </div>

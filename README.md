@@ -30,4 +30,4 @@ GitHub Pages: Settings → Pages → Source: **GitHub Actions**. `.github/workfl
 | `public/evidence/` | Selected logs per build step and per test (identifiers replaced with placeholders) |
 | `public/charts/` | Throughput charts rendered from the per-second test timelines (`scripts/charts.py`) |
 
-Questions or corrections: sweshiknagulapelly@gmail.com
+Questions or corrections: nagulapellysweshik@gmail.com
