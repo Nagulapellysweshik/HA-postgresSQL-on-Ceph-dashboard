@@ -1,0 +1,102 @@
+{
+  "run": "t3-r1",
+  "profile": "payment",
+  "target": "haproxy:5432",
+  "workers": 64,
+  "rate": 1500.0,
+  "merchants": 1000,
+  "acked": 88648,
+  "write_errors": 5739,
+  "duration_s": 88.1,
+  "baseline_tx_per_s": 1498.5,
+  "peak_tx_per_s": 1881,
+  "median_tx_per_s": 1496,
+  "write_outage_s": 30.042,
+  "outage_from_utc": "08:14:52.859",
+  "outage_to_utc": "08:15:22.902",
+  "recovery_to_90pct_s": 0.1,
+  "commit_ms_steady": {
+    "p50": 25.43,
+    "p95": 43.96,
+    "p99": 52.71,
+    "max": 184.21
+  },
+  "commit_ms_all": {
+    "p50": 24.75,
+    "p95": 43.0,
+    "p99": 50.99,
+    "max": 184.21
+  },
+  "per_worker_max_gap_s": {
+    "p50": 30.25,
+    "p95": 30.357,
+    "max": 30.375
+  },
+  "acked_rows_lost": 0,
+  "lost_ids_sample": [],
+  "committed_not_acked": 11,
+  "invariants": {
+    "payments": 88659,
+    "ledger_rows": 88659,
+    "merchant_txn_count": 88659,
+    "ledger_sum_minor": 442698243506,
+    "balances_sum_minor": 442698243506,
+    "holds": true
+  },
+  "servers": [
+    {
+      "server": "10.90.112.69",
+      "first_utc": "08:14:18.688",
+      "last_utc": "08:14:52.859"
+    },
+    {
+      "server": "10.90.177.250",
+      "first_utc": "08:15:22.902",
+      "last_utc": "08:15:46.760"
+    }
+  ],
+  "write_errors_by_type": [
+    [
+      "OperationalError: SSL connection has been closed unexpectedly",
+      5014
+    ],
+    [
+      "OperationalError: connect failed: FATAL: server login has been failing, cached error:",
+      718
+    ],
+    [
+      "OperationalError: server closed the connection unexpectedly",
+      4
+    ],
+    [
+      "OperationalError: connect failed: timeout expired",
+      3
+    ]
+  ],
+  "reads": {
+    "target": "haproxy:5433",
+    "readers": 16,
+    "ok": 167983,
+    "miss": 69,
+    "err": 6,
+    "miss_pct": 0.041,
+    "read_outage_s": 0.029,
+    "read_outage_from_utc": "08:15:09.270",
+    "read_outage_to_utc": "08:15:09.298",
+    "read_ms": {
+      "p50": 2.78,
+      "p99": 28.2
+    },
+    "reads_by_server": {
+      "10.90.135.27": 130876,
+      "10.90.177.250": 37176
+    },
+    "reads_on_write_servers": 37176,
+    "errors_by_type": [
+      [
+        "OperationalError: SSL connection has been closed unexpectedly",
+        6
+      ]
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+2026-11-21 10:16:57 [ℹ]  eksctl version 0.232.0-dev+69bb49fc6.2026-11-19T20:30:11Z
+2026-11-21 10:16:57 [ℹ]  using region ap-south-2
+2026-11-21 10:16:58 [ℹ]  subnets for ap-south-2a - public:10.90.0.0/19 private:10.90.96.0/19
+2026-11-21 10:16:58 [ℹ]  subnets for ap-south-2b - public:10.90.32.0/19 private:10.90.128.0/19
+2026-11-21 10:16:58 [ℹ]  subnets for ap-south-2c - public:10.90.64.0/19 private:10.90.160.0/19
+2026-11-21 10:16:58 [ℹ]  nodegroup "ng-1" will use "" [AmazonLinux2023/1.37]
+2026-11-21 10:16:58 [!]  Auto Mode will be enabled by default in an upcoming release of eksctl. This means managed node groups and managed networking add-ons will no longer be created by default. To maintain current behavior, explicitly set 'autoModeConfig.enabled: false' in your cluster configuration. Learn more: https://eksctl.io/usage/auto-mode/
+2026-11-21 10:16:58 [ℹ]  using Kubernetes version 1.37
+2026-11-21 10:16:58 [ℹ]  creating EKS cluster "pg-lab" in "ap-south-2" region with managed nodes
+2026-11-21 10:16:58 [ℹ]  1 nodegroup (ng-1) was included (based on the include/exclude rules)
+2026-11-21 10:16:58 [ℹ]  will create a CloudFormation stack for cluster itself and 1 managed nodegroup stack(s)
+2026-11-21 10:16:58 [ℹ]  if you encounter any issues, check CloudFormation console or try 'eksctl utils describe-stacks --region=ap-south-2 --cluster=pg-lab'
+2026-11-21 10:16:58 [ℹ]  Kubernetes API endpoint access will use provided values {publicAccess=true, privateAccess=true} for cluster "pg-lab" in "ap-south-2"
+2026-11-21 10:16:58 [ℹ]  CloudWatch logging will not be enabled for cluster "pg-lab" in "ap-south-2"
+2026-11-21 10:16:58 [ℹ]  you can enable it with 'eksctl utils update-cluster-logging --enable-types={SPECIFY-YOUR-LOG-TYPES-HERE (e.g. all)} --region=ap-south-2 --cluster=pg-lab'
+2026-11-21 10:16:58 [ℹ]  default addons metrics-server were not specified, will install them as EKS addons
+2026-11-21 10:16:58 [ℹ]  
+2 sequential tasks: { create cluster control plane "pg-lab", 
+    2 sequential sub-tasks: { 
+        5 sequential sub-tasks: { 
+            1 task: { create addons },
+            wait for control plane to become ready,
+            associate IAM OIDC provider,
+            create IAM role for serviceaccount "pg/pg-lab",
+            update VPC CNI to use IRSA if required,
+        },
+        2 sequential sub-tasks: { 
+            create managed nodegroup "ng-1",
+            propagate tags to ASG for managed nodegroup "ng-1",
+        },
+    } 
+}
+2026-11-21 10:16:58 [ℹ]  building cluster stack "eksctl-pg-lab-cluster"
+2026-11-21 10:17:00 [ℹ]  deploying stack "eksctl-pg-lab-cluster"
+2026-11-21 10:17:30 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-cluster"
+2026-11-21 10:18:00 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-cluster"
+2026-11-21 10:19:01 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-cluster"
+2026-11-21 10:20:01 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-cluster"
+2026-11-21 10:21:02 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-cluster"
+2026-11-21 10:22:02 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-cluster"
+2026-11-21 10:23:03 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-cluster"
+2026-11-21 10:24:04 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-cluster"
+2026-11-21 10:25:05 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-cluster"
+2026-11-21 10:26:05 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-cluster"
+2026-11-21 10:26:10 [!]  recommended policies were found for "vpc-cni" addon, but since OIDC is disabled on the cluster, eksctl cannot configure the requested permissions; the recommended way to provide IAM permissions for "vpc-cni" addon is via pod identity associations; after addon creation is completed, add all recommended policies to the config file, under `addon.PodIdentityAssociations`, and run `eksctl update addon`
+2026-11-21 10:26:10 [ℹ]  creating addon: vpc-cni
+2026-11-21 10:26:11 [ℹ]  successfully created addon: vpc-cni
+2026-11-21 10:26:11 [ℹ]  creating addon: coredns
+2026-11-21 10:26:12 [ℹ]  successfully created addon: coredns
+2026-11-21 10:26:12 [ℹ]  creating addon: kube-proxy
+2026-11-21 10:26:13 [ℹ]  successfully created addon: kube-proxy
+2026-11-21 10:28:18 [ℹ]  building iamserviceaccount stack "eksctl-pg-lab-addon-iamserviceaccount-pg-pg-lab"
+2026-11-21 10:28:19 [ℹ]  deploying stack "eksctl-pg-lab-addon-iamserviceaccount-pg-pg-lab"
+2026-11-21 10:28:19 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-addon-iamserviceaccount-pg-pg-lab"
+2026-11-21 10:28:50 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-addon-iamserviceaccount-pg-pg-lab"
+2026-11-21 10:29:23 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-addon-iamserviceaccount-pg-pg-lab"
+2026-11-21 10:29:24 [ℹ]  addon "vpc-cni" active
+2026-11-21 10:29:26 [ℹ]  deploying stack "eksctl-pg-lab-addon-vpc-cni"
+2026-11-21 10:29:26 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-addon-vpc-cni"
+2026-11-21 10:29:56 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-addon-vpc-cni"
+2026-11-21 10:29:56 [ℹ]  updating addon
+2026-11-21 10:30:07 [ℹ]  addon "vpc-cni" active
+2026-11-21 10:30:08 [ℹ]  building managed nodegroup stack "eksctl-pg-lab-nodegroup-ng-1"
+2026-11-21 10:30:09 [ℹ]  deploying stack "eksctl-pg-lab-nodegroup-ng-1"
+2026-11-21 10:30:09 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-nodegroup-ng-1"
+2026-11-21 10:30:39 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-nodegroup-ng-1"
+2026-11-21 10:31:27 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-nodegroup-ng-1"
+2026-11-21 10:32:56 [ℹ]  waiting for CloudFormation stack "eksctl-pg-lab-nodegroup-ng-1"
+2026-11-21 10:32:57 [ℹ]  waiting for the control plane to become ready
+2026-11-21 10:32:58 [✔]  saved kubeconfig as "~/.kube/config"
+2026-11-21 10:32:58 [ℹ]  no tasks
+2026-11-21 10:32:58 [✔]  all EKS cluster resources for "pg-lab" have been created
+2026-11-21 10:32:58 [ℹ]  nodegroup "ng-1" has 3 node(s)
+2026-11-21 10:32:58 [ℹ]  node "ip-10-90-108-58.ap-south-2.compute.internal" is ready
+2026-11-21 10:32:58 [ℹ]  node "ip-10-90-151-24.ap-south-2.compute.internal" is ready
+2026-11-21 10:32:58 [ℹ]  node "ip-10-90-173-158.ap-south-2.compute.internal" is ready
+2026-11-21 10:32:58 [ℹ]  waiting for at least 3 node(s) to become ready in "ng-1"
+2026-11-21 10:32:59 [ℹ]  nodegroup "ng-1" has 3 node(s)
+2026-11-21 10:32:59 [ℹ]  node "ip-10-90-108-58.ap-south-2.compute.internal" is ready
+2026-11-21 10:32:59 [ℹ]  node "ip-10-90-151-24.ap-south-2.compute.internal" is ready
+2026-11-21 10:32:59 [ℹ]  node "ip-10-90-173-158.ap-south-2.compute.internal" is ready
+2026-11-21 10:32:59 [✔]  created 1 managed nodegroup(s) in cluster "pg-lab"
+2026-11-21 10:33:00 [ℹ]  creating addon: snapshot-controller
+2026-11-21 10:33:31 [ℹ]  addon "snapshot-controller" active
+2026-11-21 10:33:31 [ℹ]  creating addon: metrics-server
+2026-11-21 10:34:22 [ℹ]  addon "metrics-server" active
+2026-11-21 10:34:24 [ℹ]  kubectl command should work with "~/.kube/config", try 'kubectl get nodes'
+2026-11-21 10:34:24 [ℹ]  disabling public endpoint access for the cluster
+2026-11-21 10:36:35 [ℹ]  fully private cluster "pg-lab" has been created. For subsequent operations, eksctl must be run from within the cluster's VPC, a peered VPC or some other means like AWS Direct Connect
+2026-11-21 10:36:35 [✔]  EKS cluster "pg-lab" in "ap-south-2" region is ready
+exit=0

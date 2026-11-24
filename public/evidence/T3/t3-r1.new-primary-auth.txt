@@ -1,0 +1,14 @@
+# pg-lab-1 (new primary) postgres log, t3-r1, 08:15:07.85 UTC - PgBouncer's server login rejected
+# kubectl -n pg logs pg-lab-1 --since=2h | grep -E '08:15:07\.8' | grep -oE '"(message|detail)":"([^"\\]|\\.)*"'
+"error_severity":"FATAL"
+"message":"password authentication failed for user \"app\""
+"detail":"Connection matched file \"/var/lib/postgresql/data/pgdata/pg_hba.conf\" line 26: \"host all all all scram-sha-256\""
+(x2, connection_from 10.90.163.248 and 10.90.111.242 = the two rw PgBouncer pods)
+# Same log, 08:14:50-08:15:09: no ALTER ROLE / password / secret reconcile around promotion. Promotion sequence:
+08:14:52.362 Acquiring primary lease
+08:14:54.421 Setting myself as primary
+08:14:54.426 Promoting instance
+08:14:57.523 The PostgreSQL instance has been promoted successfully
+08:14:57.552 Finished setting myself as primary
+08:14:57.772 reloading the instance (configuration)
+08:15:09.880 reloading the instance (configuration)

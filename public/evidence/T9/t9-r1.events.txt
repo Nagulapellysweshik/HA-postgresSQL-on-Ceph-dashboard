@@ -1,0 +1,10 @@
+[2026-11-22T09:35:08.792+00:00] load: payment: 64 writers @ 1500 tx/s, 1000 merchants, 64 readers @ 0/s on haproxy:5433
+[2026-11-22T09:35:21.158+00:00] lag: pg-lab-3 replay_lag_ms=0 bytes_behind=0 pg-lab-2 replay_lag_ms=0 bytes_behind=0
+[2026-11-22T09:35:27.689+00:00] lag: pg-lab-3 replay_lag_ms=0 bytes_behind=0 pg-lab-2 replay_lag_ms=0 bytes_behind=0
+[2026-11-22T09:35:34.259+00:00] lag: pg-lab-3 replay_lag_ms=0 bytes_behind=0 pg-lab-2 replay_lag_ms=0 bytes_behind=0
+[2026-11-22T09:35:40.774+00:00] lag: pg-lab-3 replay_lag_ms=0 bytes_behind=0 pg-lab-2 replay_lag_ms=0 bytes_behind=0
+[2026-11-22T09:35:48.012+00:00] lag: pg-lab-3 replay_lag_ms=0 bytes_behind=0 pg-lab-2 replay_lag_ms=0 bytes_behind=0
+[2026-11-22T09:35:54.760+00:00] lag: pg-lab-3 replay_lag_ms=0 bytes_behind=0 pg-lab-2 replay_lag_ms=0 bytes_behind=0
+[2026-11-22T09:36:01.414+00:00] lag: pg-lab-3 replay_lag_ms=0 bytes_behind=0 pg-lab-2 replay_lag_ms=0 bytes_behind=0
+[2026-11-22T09:36:08.016+00:00] lag: pg-lab-3 replay_lag_ms=0 bytes_behind=0 pg-lab-2 replay_lag_ms=0 bytes_behind=0
+[2026-11-22T09:36:14.617+00:00] lag: pg-lab-3 replay_lag_ms=0 bytes_behind=0 pg-lab-2 replay_lag_ms=0 bytes_behind=0

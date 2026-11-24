@@ -1,0 +1,17 @@
+# CNPG operator log, t2-r1 failover window (kubectl -n cnpg-system logs deploy/cnpg-cloudnative-pg), condensed
+# kill (script): 07:30:40.217 force delete pg-lab-2
+07:30:41.049887  Current primary isn't healthy, initiating a failover
+07:30:41.049917  pod status (1 of 2) pg-lab-3 receivedLsn 0/72247470 replayLsn 0/72247470
+07:30:41.049939  pod status (2 of 2) pg-lab-1 receivedLsn 0/72240FC0 replayLsn 0/72240FC0
+07:30:41.205454  Old primary pod not found in managed instances, skipping label demotion (oldPrimary pg-lab-2)
+07:30:41.205522  Waiting for all WAL receivers to be down to elect a new primary
+07:30:42.705685  Waiting for all WAL receivers to be down to elect a new primary   (repeats ~1/s)
+07:30:43.834202  Failing over newPrimary=pg-lab-1
+07:30:43.834221  pod status pg-lab-1 receivedLsn 0/723C8980 replayLsn 0/723C8980
+07:30:43.834237  pod status pg-lab-3 receivedLsn 0/723C8980 replayLsn 0/723C8980
+07:30:43.877439  Waiting for the new primary to notice the promotion request newPrimary=pg-lab-1
+07:30:43.97 .. 07:31:02.90  "There is a switchover or a failover in progress, waiting for the operation to complete" (~1/s, 19 s)
+07:31:03.190721  Updating pvc metadata pvc=pg-lab-1 (instance-role)
+07:31:03.212503  Updating pvc metadata pvc=pg-lab-2
+07:31:03.222514  Setting primary label pod=pg-lab-1
+# client: last ack old primary 07:30:42.771, first ack new primary 07:31:06.664

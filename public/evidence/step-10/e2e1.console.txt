@@ -1,0 +1,26 @@
+12:13:39 t=   1s tx/s=  801 err/s=   0 conn= 16/16 | reads ok/s=  400 miss/s=   0 err/s=   0 | total_tx=801
+12:13:40 t=   2s tx/s=  801 err/s=   0 conn= 16/16 | reads ok/s=  400 miss/s=   0 err/s=   0 | total_tx=1602
+12:13:41 t=   3s tx/s=  802 err/s=   0 conn= 16/16 | reads ok/s=  402 miss/s=   0 err/s=   0 | total_tx=2404
+12:13:42 t=   4s tx/s=  802 err/s=   0 conn= 16/16 | reads ok/s=  400 miss/s=   0 err/s=   0 | total_tx=3206
+12:13:43 t=   5s tx/s=  801 err/s=   0 conn= 16/16 | reads ok/s=  402 miss/s=   0 err/s=   0 | total_tx=4007
+12:13:44 t=   6s tx/s=  803 err/s=   0 conn= 16/16 | reads ok/s=  400 miss/s=   0 err/s=   0 | total_tx=4810
+12:13:45 t=   7s tx/s=  802 err/s=   0 conn= 16/16 | reads ok/s=  401 miss/s=   0 err/s=   0 | total_tx=5612
+12:13:46 t=   8s tx/s=  806 err/s=   0 conn= 16/16 | reads ok/s=  402 miss/s=   0 err/s=   0 | total_tx=6418
+12:13:47 t=   9s tx/s=  799 err/s=   0 conn= 16/16 | reads ok/s=  401 miss/s=   0 err/s=   0 | total_tx=7217
+12:13:48 t=  10s tx/s=  801 err/s=   0 conn= 16/16 | reads ok/s=  400 miss/s=   0 err/s=   0 | total_tx=8018
+12:13:49 t=  11s tx/s=  191 err/s= 225 conn=  0/16 | reads ok/s=   93 miss/s=   0 err/s=  57 | total_tx=8209
+12:13:50 t=  12s tx/s=    0 err/s= 288 conn=  0/16 | reads ok/s=    0 miss/s=   0 err/s=  73 | total_tx=8209
+12:13:51 t=  13s tx/s=    0 err/s= 287 conn=  0/16 | reads ok/s=    0 miss/s=   0 err/s=  71 | total_tx=8209
+12:13:52 t=  14s tx/s=    0 err/s= 294 conn=  0/16 | reads ok/s=    0 miss/s=   0 err/s=  74 | total_tx=8209
+12:13:53 t=  15s tx/s= 1171 err/s= 155 conn= 16/16 | reads ok/s=  581 miss/s=   0 err/s=  38 | total_tx=9380
+12:13:54 t=  16s tx/s=  801 err/s=   0 conn= 16/16 | reads ok/s=  401 miss/s=   0 err/s=   0 | total_tx=10181
+12:13:55 t=  17s tx/s=  800 err/s=   0 conn= 16/16 | reads ok/s=  402 miss/s=   0 err/s=   0 | total_tx=10981
+12:13:56 t=  18s tx/s=  805 err/s=   0 conn= 16/16 | reads ok/s=  401 miss/s=   0 err/s=   0 | total_tx=11786
+12:13:57 t=  19s tx/s=  803 err/s=   0 conn= 16/16 | reads ok/s=  400 miss/s=   0 err/s=   0 | total_tx=12589
+12:13:58 t=  20s tx/s=  805 err/s=   0 conn= 16/16 | reads ok/s=  402 miss/s=   0 err/s=   0 | total_tx=13394
+12:13:59 t=  21s tx/s=  800 err/s=   0 conn= 16/16 | reads ok/s=  402 miss/s=   0 err/s=   0 | total_tx=14194
+12:14:00 t=  22s tx/s=  802 err/s=   0 conn= 16/16 | reads ok/s=  400 miss/s=   0 err/s=   0 | total_tx=14996
+12:14:01 t=  23s tx/s=  801 err/s=   0 conn= 16/16 | reads ok/s=  401 miss/s=   0 err/s=   0 | total_tx=15797
+12:14:02 t=  24s tx/s=  800 err/s=   0 conn= 16/16 | reads ok/s=  401 miss/s=   0 err/s=   0 | total_tx=16597
+12:14:03 t=  25s tx/s=  489 err/s=   0 conn= 16/16 | reads ok/s=  239 miss/s=   0 err/s=   0 | total_tx=17086
+stopped

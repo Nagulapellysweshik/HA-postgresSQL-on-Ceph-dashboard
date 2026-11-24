@@ -1,0 +1,6 @@
+workers=128 profile=payment merchants=1000
+target   sust_tx/s errors     p50_ms    p95_ms    p99_ms    max_ms    run
+3000     2278     1486       14.56     38.77     55.93     158.71    cap2-r3000
+4000     2854     1432       31.43     51.49     67.33     323.25    cap2-r4000
+5000     2840     1441       31.54     51.98     69.51     190.87    cap2-r5000
+max      2832     1466       31.09     51.67     69.5      200.57    cap2-r0

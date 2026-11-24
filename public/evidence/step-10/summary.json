@@ -1,0 +1,92 @@
+{
+  "run": "e2e2",
+  "profile": "payment",
+  "target": "127.0.0.1:55432",
+  "workers": 32,
+  "rate": 1000.0,
+  "merchants": 20,
+  "acked": 20886,
+  "write_errors": 320,
+  "duration_s": 25.5,
+  "baseline_tx_per_s": 999,
+  "peak_tx_per_s": 1682,
+  "median_tx_per_s": 998.5,
+  "write_outage_s": 5.698,
+  "outage_from_utc": "06:54:13.212",
+  "outage_to_utc": "06:54:18.910",
+  "recovery_to_90pct_s": 0.1,
+  "commit_ms_steady": {
+    "p50": 0.85,
+    "p95": 1.75,
+    "p99": 4.95,
+    "max": 26.32
+  },
+  "commit_ms_all": {
+    "p50": 0.89,
+    "p95": 3.44,
+    "p99": 6.92,
+    "max": 26.32
+  },
+  "per_worker_max_gap_s": {
+    "p50": 5.731,
+    "p95": 5.748,
+    "max": 5.75
+  },
+  "acked_rows_lost": 0,
+  "lost_ids_sample": [],
+  "committed_not_acked": 0,
+  "invariants": {
+    "payments": 20886,
+    "ledger_rows": 20886,
+    "merchant_txn_count": 20886,
+    "ledger_sum_minor": 104236263104,
+    "balances_sum_minor": 104236263104,
+    "holds": true
+  },
+  "servers": [
+    {
+      "server": "127.0.0.1",
+      "first_utc": "06:54:03.357",
+      "last_utc": "06:54:28.869"
+    }
+  ],
+  "write_errors_by_type": [
+    [
+      "OperationalError: connection to server at \"127.0.0.1\", port 55432",
+      288
+    ],
+    [
+      "OperationalError: server closed the connection unexpectedly",
+      32
+    ]
+  ],
+  "reads": {
+    "target": "127.0.0.1:55432",
+    "readers": 8,
+    "ok": 16645,
+    "miss": 0,
+    "err": 80,
+    "miss_pct": 0.0,
+    "read_outage_s": 5.702,
+    "read_outage_from_utc": "06:54:13.205",
+    "read_outage_to_utc": "06:54:18.907",
+    "read_ms": {
+      "p50": 0.2,
+      "p99": 2.69
+    },
+    "reads_by_server": {
+      "127.0.0.1": 16645
+    },
+    "reads_on_write_servers": 16645,
+    "errors_by_type": [
+      [
+        "OperationalError: connection to server at \"127.0.0.1\", port 55432",
+        72
+      ],
+      [
+        "OperationalError: server closed the connection unexpectedly",
+        8
+      ]
+    ]
+  }
+}

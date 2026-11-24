@@ -1,0 +1,4 @@
+# CNPG operator, t3-r1 live pane (screenshot docs/screenshots/t3-r1-switchover-4-pane-live.png); file overwritten by r2, transcribed
+08:14:52.398  Setting primary label to unhealthy in the old primary during failover
+08:14:52.444 .. 08:14:57.504  There is a switchover or a failover in progress, waiting for the operation to complete  (x9)
+08:14:57.769  Setting primary label

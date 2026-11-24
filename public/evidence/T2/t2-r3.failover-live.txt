@@ -1,0 +1,13 @@
+07:57:18.137  Current primary isn't healthy, initiating a failover
+07:57:18.267  Waiting for all WAL receivers to be down to elect a new primary
+07:57:18.485  Waiting for all WAL receivers to be down to elect a new primary
+07:57:19.618  Waiting for all WAL receivers to be down to elect a new primary
+07:57:20.798  Failing over
+07:57:20.856  Waiting for the new primary to notice the promotion request
+07:57:21.008  Acquiring primary lease
+07:57:37.096  Acquired primary lease
+07:57:37.096  Setting myself as primary
+07:57:37.102  Promoting instance
+07:57:39.808  server promoted
+07:57:40.088  Finished setting myself as primary
+07:57:40.347  Setting primary label

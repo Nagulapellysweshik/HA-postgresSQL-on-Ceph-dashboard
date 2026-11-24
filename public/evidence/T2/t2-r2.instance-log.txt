@@ -1,0 +1,19 @@
+# pg-lab-2 instance-manager log, t2-r2 failover window (kubectl -n pg logs pg-lab-2), condensed
+# kill (script): 07:39:13.867 force delete pg-lab-1 (primary)
+07:39:16.448  wal-restore: Refusing to restore future timeline history file 0000000C.history (cluster timeline 11)
+07:39:17.079  barman-cloud-wal-restore: WAL file 0000000B...0079/76/77/78 does not exist   (standby polling S3, repeats every ~5 s)
+07:39:17.485  Replicator: synchronizing replication slots: failed to connect ... pg-lab-rw
+07:39:17.602  Acquiring primary lease
+07:39:22 / 27 / 32  barman-cloud-wal-restore: WAL ... does not exist   (polling continues)
+07:39:33.671  primary-lease: Acquired primary lease                     <- 16.07 s after "Acquiring"
+07:39:33.671  Setting myself as primary
+07:39:33.671  I'm the target primary, wait for the wal_receiver to be terminated
+07:39:33.674  I'm the target primary, applying WALs and promoting my instance
+07:39:33.675  Promoting instance
+07:39:33.683  Successfully acquired lease (lock pg/pg-lab)
+07:39:34-35   end-of-recovery restore_command probes to S3 (WAL ...76-79, 0000000C.history not found)
+07:39:36.107  wal-restore: Restored WAL file 0000000B.history
+07:39:36.274  wal-archive: Refusing to archive WAL when there is a switchover in progress
+07:39:36.282  pg_ctl: waiting for server to promote...... done / server promoted
+07:39:36.282  Requesting a checkpoint
+# script: new primary labelled 07:39:37.848; old primary back as replica +14 s

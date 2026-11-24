@@ -1,0 +1,103 @@
+{
+  "run": "t2-r4",
+  "profile": "payment",
+  "target": "pg-lab-rw:5432",
+  "workers": 64,
+  "rate": 1500.0,
+  "merchants": 1000,
+  "acked": 78825,
+  "write_errors": 593,
+  "duration_s": 79.1,
+  "baseline_tx_per_s": 1498.5,
+  "peak_tx_per_s": 2943,
+  "median_tx_per_s": 1491.5,
+  "write_outage_s": 24.211,
+  "outage_from_utc": "07:57:19.909",
+  "outage_to_utc": "07:57:44.120",
+  "recovery_to_90pct_s": 0.9,
+  "commit_ms_steady": {
+    "p50": 15.11,
+    "p95": 19.09,
+    "p99": 25.08,
+    "max": 55.31
+  },
+  "commit_ms_all": {
+    "p50": 16.39,
+    "p95": 29.8,
+    "p99": 44.33,
+    "max": 4291.15
+  },
+  "per_worker_max_gap_s": {
+    "p50": 24.236,
+    "p95": 24.256,
+    "max": 24.259
+  },
+  "acked_rows_lost": 0,
+  "lost_ids_sample": [],
+  "committed_not_acked": 3,
+  "invariants": {
+    "payments": 78828,
+    "ledger_rows": 78828,
+    "merchant_txn_count": 78828,
+    "ledger_sum_minor": 394059972851,
+    "balances_sum_minor": 394059972851,
+    "holds": true
+  },
+  "servers": [
+    {
+      "server": "10.90.179.240",
+      "first_utc": "07:56:56.571",
+      "last_utc": "07:57:19.909"
+    },
+    {
+      "server": "10.90.112.69",
+      "first_utc": "07:57:44.120",
+      "last_utc": "07:58:15.669"
+    }
+  ],
+  "write_errors_by_type": [
+    [
+      "OperationalError: connect failed: timeout expired",
+      502
+    ],
+    [
+      "OperationalError: SSL error: unexpected eof while reading",
+      35
+    ],
+    [
+      "OperationalError: server closed the connection unexpectedly",
+      29
+    ],
+    [
+      "OperationalError: connect failed: Connection refused",
+      27
+    ]
+  ],
+  "reads": {
+    "target": "haproxy:5433",
+    "readers": 16,
+    "ok": 157889,
+    "miss": 243,
+    "err": 1,
+    "miss_pct": 0.154,
+    "read_outage_s": 0.009,
+    "read_outage_from_utc": "07:57:40.861",
+    "read_outage_to_utc": "07:57:40.869",
+    "read_ms": {
+      "p50": 2.76,
+      "p99": 13.5
+    },
+    "reads_by_server": {
+      "10.90.135.27": 151267,
+      "10.90.179.240": 3066,
+      "10.90.112.69": 3799
+    },
+    "reads_on_write_servers": 6865,
+    "errors_by_type": [
+      [
+        "OperationalError: SSL connection has been closed unexpectedly",
+        1
+      ]
+    ]
+  }
+}

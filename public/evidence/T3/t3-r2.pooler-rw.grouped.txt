@@ -1,0 +1,19 @@
+# PgBouncer rw pooler log, t3-r2 (server_login_retry=1) switchover window, grouped: first .. last (UTC)  count  level  message
+08:30:11.552 .. 08:30:11.601      17  LOG     closing because: server conn crashed? (age=32s)
+08:30:11.579 .. 08:30:11.606      69  LOG     closing because: server conn crashed? (age=33s)
+08:30:11.579 .. 08:30:11.606      39  WARNING pooler error: server conn crashed?
+08:30:11.579 .. 08:30:11.586       8  WARNING got packet 'E' from server when not linked
+08:30:11.600 .. 08:30:16.163      20  LOG     closing because: connect failed (age=0s)
+08:30:11.615 .. 08:30:16.468     694  LOG     closing because: server login has been failing, cached error: connect failed (server_login_retry) (age=0s)
+08:30:11.615 .. 08:30:16.468     694  WARNING pooler error: server login has been failing, cached error: connect failed (server_login_retry)
+08:30:17.332 .. 08:30:18.566      50  LOG     new connection to server (from IP)
+08:30:17.340 .. 08:30:18.570      50  LOG     SSL established: TLSv1.3/TLS_AES_256_GCM_SHA384
+08:30:17.346 .. 08:30:17.168       2  WARNING server login failed: FATAL password authentication failed for user "app"
+08:30:17.346 .. 08:30:17.347      11  LOG     closing because: password authentication failed for user "app" (age=39s)
+08:30:17.346 .. 08:30:17.171      25  WARNING pooler error: password authentication failed for user "app"
+08:30:17.347 .. 08:30:17.171      14  LOG     closing because: password authentication failed for user "app" (age=38s)
+08:30:17.347 .. 08:30:17.171       2  LOG     closing because: password authentication failed for user "app" (age=0s)
+08:30:17.352 .. 08:30:17.354       2  LOG     login attempt: db=app user=app tls=no replication=no
+08:30:17.354 .. 08:30:18.456     371  LOG     login attempt: db=app user=app tls=TLSv1.3/TLS_AES_256_GCM_SHA384 replication=no
+08:30:17.388 .. 08:30:18.183     309  LOG     closing because: server login has been failing, cached error: password authentication failed for user "app" (server_login_retry) (age=0s)
+08:30:17.388 .. 08:30:18.183     309  WARNING pooler error: server login has been failing, cached error: password authentication failed for user "app" (server_login_retry)

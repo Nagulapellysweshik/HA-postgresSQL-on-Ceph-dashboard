@@ -1,0 +1,458 @@
+[
+ {
+  "key": "step-02",
+  "title": "Image mirror",
+  "files": [
+   {
+    "path": "evidence/step-02/mirror.log",
+    "name": "mirror.log",
+    "label": "crane copy of all 16 images into private ECR",
+    "bytes": 77508
+   }
+  ]
+ },
+ {
+  "key": "step-03-04",
+  "title": "Private EKS cluster",
+  "files": [
+   {
+    "path": "evidence/step-03-04/eksctl-create.log",
+    "name": "eksctl-create.log",
+    "label": "eksctl create cluster: private mode, ~20 min, public endpoint disabled last",
+    "bytes": 7495
+   },
+   {
+    "path": "evidence/step-03-04/eksctl-pg-lab-cluster.resources.txt",
+    "name": "eksctl-pg-lab-cluster.resources.txt",
+    "label": "CloudFormation resources of the cluster stack: no IGW, NAT gateway or EIP",
+    "bytes": 1323
+   },
+   {
+    "path": "evidence/step-03-04/eksctl-pg-lab-nodegroup-ng-1.resources.txt",
+    "name": "eksctl-pg-lab-nodegroup-ng-1.resources.txt",
+    "label": "Node group stack resources",
+    "bytes": 197
+   }
+  ]
+ },
+ {
+  "key": "step-05",
+  "title": "Rook-Ceph",
+  "files": [
+   {
+    "path": "evidence/step-05/step05-ceph.txt",
+    "name": "step05-ceph.txt",
+    "label": "ceph status, osd tree and pools after the device-filter fix",
+    "bytes": 2984
+   },
+   {
+    "path": "evidence/step-05/step05b-csi-drivers.txt",
+    "name": "step05b-csi-drivers.txt",
+    "label": "ceph-csi-drivers chart: Driver + OperatorConfig, ctrlplugin and nodeplugins",
+    "bytes": 775
+   }
+  ]
+ },
+ {
+  "key": "step-06",
+  "title": "Storage check",
+  "files": [
+   {
+    "path": "evidence/step-06/step06-storage.txt",
+    "name": "step06-storage.txt",
+    "label": "PVC bound, VolumeSnapshot readyToUse, cleanup",
+    "bytes": 473
+   }
+  ]
+ },
+ {
+  "key": "step-07",
+  "title": "CloudNativePG",
+  "files": [
+   {
+    "path": "evidence/step-07/step07-cnpg.txt",
+    "name": "step07-cnpg.txt",
+    "label": "kubectl cnpg status: quorum sync standbys, WAL archiving OK, first backup",
+    "bytes": 1189
+   }
+  ]
+ },
+ {
+  "key": "step-08",
+  "title": "PgBouncer",
+  "files": [
+   {
+    "path": "evidence/step-08/step08-poolers.txt",
+    "name": "step08-poolers.txt",
+    "label": "Poolers rw/ro, pods across zones, services",
+    "bytes": 748
+   }
+  ]
+ },
+ {
+  "key": "step-09",
+  "title": "HAProxy",
+  "files": [
+   {
+    "path": "evidence/step-09/step09-haproxy.txt",
+    "name": "step09-haproxy.txt",
+    "label": "HAProxy stats CSV: backends UP, spare slots MAINT",
+    "bytes": 633
+   }
+  ]
+ },
+ {
+  "key": "step-10",
+  "title": "Load client",
+  "files": [
+   {
+    "path": "evidence/step-10/step10-load-client.txt",
+    "name": "step10-load-client.txt",
+    "label": "Smoke test of all 6 paths",
+    "bytes": 498
+   },
+   {
+    "path": "evidence/step-10/summary.json",
+    "name": "summary.json",
+    "label": "Load generator validated against a local PostgreSQL crash first",
+    "bytes": 1946
+   },
+   {
+    "path": "evidence/step-10/e2e1.console.txt",
+    "name": "e2e1.console.txt",
+    "label": "Local end-to-end run console",
+    "bytes": 2742
+   }
+  ]
+ },
+ {
+  "key": "T0",
+  "title": "Capacity sweep",
+  "files": [
+   {
+    "path": "evidence/T0/cap1-capacity.txt",
+    "name": "cap1-capacity.txt",
+    "label": "Sweep at 64 connections",
+    "bytes": 630
+   },
+   {
+    "path": "evidence/T0/cap2-capacity.txt",
+    "name": "cap2-capacity.txt",
+    "label": "Sweep at 128 connections (refusals)",
+    "bytes": 434
+   },
+   {
+    "path": "evidence/T0/cap1-r0.summary.json",
+    "name": "cap1-r0.summary.json",
+    "label": "Max-rate summary, 64 connections",
+    "bytes": 1132
+   }
+  ]
+ },
+ {
+  "key": "T1",
+  "title": "pgbench baseline",
+  "files": [
+   {
+    "path": "evidence/T1/t1-baseline.txt",
+    "name": "t1-baseline.txt",
+    "label": "pgbench output + Ceph status under load",
+    "bytes": 1033
+   }
+  ]
+ },
+ {
+  "key": "T2",
+  "title": "Primary kill",
+  "files": [
+   {
+    "path": "evidence/T2/t2-r4.summary.json",
+    "name": "t2-r4.summary.json",
+    "label": "Run 4 summary: 0 lost, invariants, outage",
+    "bytes": 2194
+   },
+   {
+    "path": "evidence/T2/t2-r4.console.txt",
+    "name": "t2-r4.console.txt",
+    "label": "Run 4 live console, per second",
+    "bytes": 8802
+   },
+   {
+    "path": "evidence/T2/t2-r1.operator-log.txt",
+    "name": "t2-r1.operator-log.txt",
+    "label": "Operator log: detection 0.8 s, election 3.6 s",
+    "bytes": 1394
+   },
+   {
+    "path": "evidence/T2/t2-r2.instance-log.txt",
+    "name": "t2-r2.instance-log.txt",
+    "label": "New primary's log: the 16 s lease wait",
+    "bytes": 1469
+   },
+   {
+    "path": "evidence/T2/t2-r3.failover-live.txt",
+    "name": "t2-r3.failover-live.txt",
+    "label": "Live failover pane",
+    "bytes": 665
+   }
+  ]
+ },
+ {
+  "key": "T3",
+  "title": "Planned switchover",
+  "files": [
+   {
+    "path": "evidence/T3/t3-r1.summary.json",
+    "name": "t3-r1.summary.json",
+    "label": "r1 summary: 30.0 s outage",
+    "bytes": 2201
+   },
+   {
+    "path": "evidence/T3/t3-r1.pooler-rw.grouped.txt",
+    "name": "t3-r1.pooler-rw.grouped.txt",
+    "label": "r1 PgBouncer log, grouped: two 15 s server_login_retry windows",
+    "bytes": 2213
+   },
+   {
+    "path": "evidence/T3/t3-r1.new-primary-auth.txt",
+    "name": "t3-r1.new-primary-auth.txt",
+    "label": "r1 new primary: SCRAM FATAL + promotion sequence",
+    "bytes": 946
+   },
+   {
+    "path": "evidence/T3/t3-r1.operator-live.txt",
+    "name": "t3-r1.operator-live.txt",
+    "label": "r1 operator decisions",
+    "bytes": 376
+   },
+   {
+    "path": "evidence/T3/t3-r2.summary.json",
+    "name": "t3-r2.summary.json",
+    "label": "r2 summary after the fix: 8.0 s",
+    "bytes": 2206
+   },
+   {
+    "path": "evidence/T3/t3-r2.pooler-rw.grouped.txt",
+    "name": "t3-r2.pooler-rw.grouped.txt",
+    "label": "r2 PgBouncer log: 1 s windows",
+    "bytes": 2204
+   }
+  ]
+ },
+ {
+  "key": "T4",
+  "title": "App-path crash",
+  "files": [
+   {
+    "path": "evidence/T4/t4-r1.summary.json",
+    "name": "t4-r1.summary.json",
+    "label": "Summary: 23.9 s through HAProxy \u2192 PgBouncer",
+    "bytes": 2202
+   },
+   {
+    "path": "evidence/T4/t4-r1.failover-live.txt",
+    "name": "t4-r1.failover-live.txt",
+    "label": "Live failover pane",
+    "bytes": 4451
+   }
+  ]
+ },
+ {
+  "key": "T5",
+  "title": "OSD loss",
+  "files": [
+   {
+    "path": "evidence/T5/t5-r1.summary.json",
+    "name": "t5-r1.summary.json",
+    "label": "Summary: 0 errors in 400 s",
+    "bytes": 1706
+   },
+   {
+    "path": "evidence/T5/t5-r1.ceph-live.txt",
+    "name": "t5-r1.ceph-live.txt",
+    "label": "Ceph status through loss and recovery",
+    "bytes": 13311
+   },
+   {
+    "path": "evidence/T5/t5-r1.events.txt",
+    "name": "t5-r1.events.txt",
+    "label": "Test events",
+    "bytes": 4475
+   }
+  ]
+ },
+ {
+  "key": "T6",
+  "title": "Zone loss",
+  "files": [
+   {
+    "path": "evidence/T6/t6-r2.summary.json",
+    "name": "t6-r2.summary.json",
+    "label": "Summary: 24.5 s, 0 lost over 1.84 M",
+    "bytes": 2219
+   },
+   {
+    "path": "evidence/T6/t6-r2.events.txt",
+    "name": "t6-r2.events.txt",
+    "label": "Test events with Ceph status every 30 s",
+    "bytes": 10323
+   },
+   {
+    "path": "evidence/T6/t6-r2.failover-live.txt",
+    "name": "t6-r2.failover-live.txt",
+    "label": "Live failover pane",
+    "bytes": 631
+   },
+   {
+    "path": "evidence/T6/t6-preflight-cordon-switchover.txt",
+    "name": "t6-preflight-cordon-switchover.txt",
+    "label": "Pre-flight: cordon triggers a switchover (operator log)",
+    "bytes": 728
+   }
+  ]
+ },
+ {
+  "key": "T7",
+  "title": "Connection storm",
+  "files": [
+   {
+    "path": "evidence/T7/t7-a-storm.txt",
+    "name": "t7-a-storm.txt",
+    "label": "Direct vs pooled, side by side",
+    "bytes": 1895
+   },
+   {
+    "path": "evidence/T7/t7-a.backends-live.txt",
+    "name": "t7-a.backends-live.txt",
+    "label": "Postgres backends sampled every ~3 s",
+    "bytes": 2395
+   },
+   {
+    "path": "evidence/T7/t7-a-direct.summary.json",
+    "name": "t7-a-direct.summary.json",
+    "label": "Direct summary",
+    "bytes": 1457
+   },
+   {
+    "path": "evidence/T7/t7-a-pooled.summary.json",
+    "name": "t7-a-pooled.summary.json",
+    "label": "Pooled summary",
+    "bytes": 1237
+   }
+  ]
+ },
+ {
+  "key": "T8",
+  "title": "Pool tuning",
+  "files": [
+   {
+    "path": "evidence/T8/t8-a-pool.txt",
+    "name": "t8-a-pool.txt",
+    "label": "All settings with mid-run SHOW POOLS",
+    "bytes": 6492
+   },
+   {
+    "path": "evidence/T8/t8-a.fairness.txt",
+    "name": "t8-a.fairness.txt",
+    "label": "Payments per client: the starvation evidence",
+    "bytes": 238
+   },
+   {
+    "path": "evidence/T8/t8-a.slots-at-rest.txt",
+    "name": "t8-a.slots-at-rest.txt",
+    "label": "Who holds connection slots at rest",
+    "bytes": 371
+   }
+  ]
+ },
+ {
+  "key": "T9",
+  "title": "Read/write split",
+  "files": [
+   {
+    "path": "evidence/T9/t9-r2.summary.json",
+    "name": "t9-r2.summary.json",
+    "label": "Summary: 0 reads on the primary",
+    "bytes": 1595
+   },
+   {
+    "path": "evidence/T9/t9-r2.events.txt",
+    "name": "t9-r2.events.txt",
+    "label": "Replication lag samples",
+    "bytes": 3767
+   },
+   {
+    "path": "evidence/T9/t9-r1.events.txt",
+    "name": "t9-r1.events.txt",
+    "label": "Blocked first attempt",
+    "bytes": 1173
+   }
+  ]
+ },
+ {
+  "key": "T10",
+  "title": "HAProxy timing",
+  "files": [
+   {
+    "path": "evidence/T10/t10-a.haproxy-live.txt",
+    "name": "t10-a.haproxy-live.txt",
+    "label": "Live HAProxy slot states",
+    "bytes": 28678
+   },
+   {
+    "path": "evidence/T10/t10-a-haproxy.txt",
+    "name": "t10-a-haproxy.txt",
+    "label": "Script output (with the timing bug)",
+    "bytes": 3048
+   }
+  ]
+ },
+ {
+  "key": "T11",
+  "title": "Minor upgrade",
+  "files": [
+   {
+    "path": "evidence/T11/t11-r1.summary.json",
+    "name": "t11-r1.summary.json",
+    "label": "Summary: one 16.5 s outage, 5.08 M payments",
+    "bytes": 2158
+   },
+   {
+    "path": "evidence/T11/t11-r1.stuck-diagnosis.txt",
+    "name": "t11-r1.stuck-diagnosis.txt",
+    "label": "Why pg-lab-2 stayed Pending: missing CSI config",
+    "bytes": 2295
+   },
+   {
+    "path": "evidence/T11/t11-r1.rook-operator-csi.txt",
+    "name": "t11-r1.rook-operator-csi.txt",
+    "label": "Rook operator restart, ClientProfile recreated",
+    "bytes": 2443
+   },
+   {
+    "path": "evidence/T11/t11-r1.events.txt",
+    "name": "t11-r1.events.txt",
+    "label": "Test events",
+    "bytes": 1655
+   }
+  ]
+ },
+ {
+  "key": "T12",
+  "title": "PITR",
+  "files": [
+   {
+    "path": "evidence/T12/t12-r1.summary.json",
+    "name": "t12-r1.summary.json",
+    "label": "Summary",
+    "bytes": 1585
+   },
+   {
+    "path": "evidence/T12/t12-r1.events.txt",
+    "name": "t12-r1.events.txt",
+    "label": "Backup, TARGET, incident, restore checks",
+    "bytes": 1812
+   }
+  ]
+ }
+]

@@ -1,0 +1,9 @@
+# Step 10: ./install/10-load-client.sh (2026-11-21 ~21:00 IST), pasted by user
+configmap/lab-scripts created; pvc/load-logs created; pod/load-client Ready
+path               port  inet_server_addr | pg_is_in_recovery
+pg-lab-rw          5432  10.90.179.240|f    (primary pg-lab-1, 2c)
+pg-lab-ro          5432  10.90.96.89|t      (replica)
+pg-lab-pooler-rw   5432  10.90.179.240|f
+pg-lab-pooler-ro   5432  10.90.96.89|t
+haproxy            5432  10.90.179.240|f
+haproxy            5433  10.90.96.89|t

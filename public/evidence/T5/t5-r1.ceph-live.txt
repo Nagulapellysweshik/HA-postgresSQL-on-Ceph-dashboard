@@ -1,0 +1,78 @@
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 26h), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 26h), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 26h), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 26h), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 26h), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 26h), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 26h), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 26h), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 26h), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 26h), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 26h), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 26h), 3 in (since 26h)  io:
+ health: HEALTH_WARN  Degraded data redundancy: 1281/8163 objects degraded (15.693%), 16 pgs degraded  osd: 3 osds: 2 up (since 5s), 3 in (since 26h)  pgs: 1281/8163 objects degraded (15.693%)  16 active+undersized+degra
+ health: HEALTH_WARN  Degraded data redundancy: 2730/8190 objects degraded (33.333%), 33 pgs degraded  osd: 3 osds: 2 up (since 11s), 3 in (since 26h)  pgs: 2730/8190 objects degraded (33.333%)  33 active+undersized+degr
+ health: HEALTH_WARN  Degraded data redundancy: 2733/8199 objects degraded (33.333%), 33 pgs degraded  osd: 3 osds: 2 up (since 18s), 3 in (since 26h)  pgs: 2733/8199 objects degraded (33.333%)  33 active+undersized+degr
+ health: HEALTH_WARN  Degraded data redundancy: 2733/8199 objects degraded (33.333%), 33 pgs degraded  osd: 3 osds: 2 up (since 24s), 3 in (since 26h)  pgs: 2733/8199 objects degraded (33.333%)  33 active+undersized+degr
+ health: HEALTH_WARN  Degraded data redundancy: 2741/8223 objects degraded (33.333%), 33 pgs degraded  osd: 3 osds: 2 up (since 31s), 3 in (since 26h)  pgs: 2741/8223 objects degraded (33.333%)  33 active+undersized+degr
+ health: HEALTH_WARN  Degraded data redundancy: 2745/8235 objects degraded (33.333%), 33 pgs degraded  osd: 3 osds: 2 up (since 37s), 3 in (since 26h)  pgs: 2745/8235 objects degraded (33.333%)  33 active+undersized+degr
+ health: HEALTH_WARN  Degraded data redundancy: 2745/8235 objects degraded (33.333%), 33 pgs degraded  osd: 3 osds: 2 up (since 44s), 3 in (since 26h)  pgs: 2745/8235 objects degraded (33.333%)  33 active+undersized+degr
+ health: HEALTH_WARN  Degraded data redundancy: 2753/8259 objects degraded (33.333%), 33 pgs degraded  osd: 3 osds: 2 up (since 51s), 3 in (since 26h)  pgs: 2753/8259 objects degraded (33.333%)  33 active+undersized+degr
+ health: HEALTH_WARN  Degraded data redundancy: 2766/8298 objects degraded (33.333%), 33 pgs degraded  osd: 3 osds: 2 up (since 57s), 3 in (since 26h)  pgs: 2766/8298 objects degraded (33.333%)  33 active+undersized+degr
+ health: HEALTH_WARN  Degraded data redundancy: 2793/8379 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 64s), 3 in (since 26h)  pgs: 2793/8379 objects degraded (33.333%)  33 act
+ health: HEALTH_WARN  Degraded data redundancy: 2806/8418 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 71s), 3 in (since 26h)  pgs: 2806/8418 objects degraded (33.333%)  33 act
+ health: HEALTH_WARN  Degraded data redundancy: 2827/8481 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 77s), 3 in (since 26h)  pgs: 2827/8481 objects degraded (33.333%)  33 act
+ health: HEALTH_WARN  Degraded data redundancy: 2827/8481 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 84s), 3 in (since 26h)  pgs: 2827/8481 objects degraded (33.333%)  33 act
+ health: HEALTH_WARN  Degraded data redundancy: 2827/8481 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 90s), 3 in (since 26h)  pgs: 2827/8481 objects degraded (33.333%)  33 act
+ health: HEALTH_WARN  Degraded data redundancy: 2843/8529 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 96s), 3 in (since 26h)  pgs: 2843/8529 objects degraded (33.333%)  33 act
+ health: HEALTH_WARN  Degraded data redundancy: 2845/8535 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 103s), 3 in (since 26h)  pgs: 2845/8535 objects degraded (33.333%)  33 ac
+ health: HEALTH_WARN  Degraded data redundancy: 2845/8535 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 109s), 3 in (since 26h)  pgs: 2845/8535 objects degraded (33.333%)  33 ac
+ health: HEALTH_WARN  Degraded data redundancy: 2857/8571 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 116s), 3 in (since 26h)  pgs: 2857/8571 objects degraded (33.333%)  33 ac
+ health: HEALTH_WARN  Degraded data redundancy: 2861/8583 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 2m), 3 in (since 26h)  pgs: 2861/8583 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2871/8613 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 2m), 3 in (since 26h)  pgs: 2871/8613 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2887/8661 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 2m), 3 in (since 26h)  pgs: 2887/8661 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2887/8661 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 2m), 3 in (since 26h)  pgs: 2887/8661 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2887/8661 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 2m), 3 in (since 26h)  pgs: 2887/8661 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2900/8700 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 2m), 3 in (since 26h)  pgs: 2900/8700 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2904/8712 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 2m), 3 in (since 26h)  pgs: 2904/8712 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2904/8712 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 2m), 3 in (since 26h)  pgs: 2904/8712 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2916/8748 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 2m), 3 in (since 26h)  pgs: 2916/8748 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2916/8748 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 3m), 3 in (since 26h)  pgs: 2916/8748 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2930/8790 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 3m), 3 in (since 26h)  pgs: 2930/8790 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2933/8799 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 3m), 3 in (since 26h)  pgs: 2933/8799 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2935/8805 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 3m), 3 in (since 26h)  pgs: 2935/8805 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2947/8841 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 3m), 3 in (since 26h)  pgs: 2947/8841 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2947/8841 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 3m), 3 in (since 26h)  pgs: 2947/8841 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2951/8853 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 3m), 3 in (since 26h)  pgs: 2951/8853 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2964/8892 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 3m), 3 in (since 26h)  pgs: 2964/8892 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2969/8907 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 3m), 3 in (since 26h)  pgs: 2969/8907 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2973/8919 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 4m), 3 in (since 26h)  pgs: 2973/8919 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2982/8946 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 4m), 3 in (since 26h)  pgs: 2982/8946 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 2991/8973 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 4m), 3 in (since 26h)  pgs: 2991/8973 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 3000/9000 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 4m), 3 in (since 26h)  pgs: 3000/9000 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 3006/9018 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 4m), 3 in (since 26h)  pgs: 3006/9018 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 3007/9021 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 4m), 3 in (since 26h)  pgs: 3007/9021 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 3022/9066 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 4m), 3 in (since 26h)  pgs: 3022/9066 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 3026/9078 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 4m), 3 in (since 26h)  pgs: 3026/9078 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 3026/9078 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 4m), 3 in (since 26h)  pgs: 3026/9078 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 3039/9117 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized  osd: 3 osds: 2 up (since 5m), 3 in (since 26h)  pgs: 3039/9117 objects degraded (33.333%)  33 acti
+ health: HEALTH_WARN  Degraded data redundancy: 286/9123 objects degraded (3.135%), 14 pgs degraded, 1 pg undersized  osd: 3 osds: 3 up (since 6s), 3 in (since 26h); 26 remapped pgs  286/9123 objects degraded (3.135%)  1
+ health: HEALTH_WARN  Degraded data redundancy: 557/9129 objects degraded (6.101%), 23 pgs degraded  osd: 3 osds: 3 up (since 13s), 3 in (since 26h); 19 remapped pgs  557/9129 objects degraded (6.101%)  20 active+recover
+ health: HEALTH_WARN  Degraded data redundancy: 435/9132 objects degraded (4.763%), 16 pgs degraded  osd: 3 osds: 3 up (since 20s), 3 in (since 26h); 13 remapped pgs  435/9132 objects degraded (4.763%)  14 active+recover
+ health: HEALTH_WARN  Degraded data redundancy: 342/9135 objects degraded (3.744%), 11 pgs degraded  osd: 3 osds: 3 up (since 26s), 3 in (since 26h); 7 remapped pgs  342/9135 objects degraded (3.744%)  8 active+recovery_
+ health: HEALTH_WARN  Degraded data redundancy: 225/9138 objects degraded (2.462%), 4 pgs degraded  osd: 3 osds: 3 up (since 33s), 3 in (since 26h); 2 remapped pgs  225/9138 objects degraded (2.462%)  2 active+undersized
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 40s), 3 in (since 26h)  io:  recovery: 52 MiB/s, 14 objects/s
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 47s), 3 in (since 26h)  io:  recovery: 5.3 MiB/s, 1 objects/s
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 54s), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 60s), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 67s), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 73s), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 79s), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 86s), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 92s), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 99s), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 105s), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 112s), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 118s), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 2m), 3 in (since 26h)  io:
+ health: HEALTH_OK  osd: 3 osds: 3 up (since 2m), 3 in (since 26h)  io:

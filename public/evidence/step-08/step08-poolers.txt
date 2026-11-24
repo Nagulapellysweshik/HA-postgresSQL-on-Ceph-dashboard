@@ -1,0 +1,11 @@
+# Step 8: ./install/08-poolers.sh (2026-11-21 20:46 IST), screenshot from user
+pooler/pg-lab-pooler-rw, pooler/pg-lab-pooler-ro created (phase active); services *-hl created
+rollout: both deployments 2/2
+pg-lab-pooler-ro-759c795f54-jl9p2  Running  10.90.186.210  ip-10-90-173-158 (2c)
+pg-lab-pooler-ro-759c795f54-nvq8l  Running  10.90.123.28   ip-10-90-108-58  (2a)
+pg-lab-pooler-rw-8494ff8ffd-4p8sg  Running  10.90.163.248  ip-10-90-173-158 (2c)
+pg-lab-pooler-rw-8494ff8ffd-xg5xf  Running  10.90.111.242  ip-10-90-108-58  (2a)
+svc pg-lab-pooler-ro     ClusterIP 172.20.106.173 5432
+svc pg-lab-pooler-ro-hl  None                     5432
+svc pg-lab-pooler-rw     ClusterIP 172.20.123.102 5432
+svc pg-lab-pooler-rw-hl  None                     5432

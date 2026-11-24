@@ -1,0 +1,8 @@
+   1 11:32:52 Periodic TLS certificates maintenance
+   1 11:49:37 Primary is running on an unschedulable node, will try switching over
+   1 11:49:37 Current primary is running on unschedulable node, triggering a switchover
+   1 11:49:37 There is a switchover or a failover in progress, waiting for the operation to complete
+   1 11:49:38 There is a switchover or a failover in progress, waiting for the operation to complete
+   4 11:49:39 There is a switchover or a failover in progress, waiting for the operation to complete
+   1 11:49:40 There is a switchover or a failover in progress, waiting for the operation to complete
+   1 11:49:41 There is a switchover or a failover in progress, waiting for the operation to complete

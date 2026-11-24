@@ -1,0 +1,6 @@
+# Step 6: ./install/06-storage-check.sh  (2026-11-21 15:58 IST), pasted by user
+namespace/storage-check created
+persistentvolumeclaim/test-pvc   Bound  pvc-37771f28-73ac-4a90-bcc5-626dd66a0de7  1Gi RWO ceph-block   (age 3s)
+volumesnapshot/test-pvc-snap     READYTOUSE=true  RESTORESIZE=1Gi  snapcontent-aa2c8602-c4d4-4eec-9b19-8d016f632998  (age 3s)
+pv pvc-37771f28-...  1Gi RWO Delete Bound storage-check/test-pvc ceph-block
+snapshot, pvc, namespace storage-check deleted

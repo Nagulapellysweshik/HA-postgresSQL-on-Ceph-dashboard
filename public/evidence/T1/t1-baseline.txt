@@ -1,0 +1,34 @@
+pgbench (18.6 (Debian 18.6-1.pgdg13+2))
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 50
+query mode: simple
+number of clients: 50
+number of threads: 4
+maximum number of tries: 1
+duration: 120 s
+number of transactions actually processed: 245112
+number of failed transactions: 0 (0.000%)
+latency average = 24.442 ms
+latency stddev = 20.602 ms
+initial connection time = 185.406 ms
+tps = 2043.269017 (without initial connection time)
+p95_latency_ms=50.13
+  cluster:
+    id:     25e41ff2-7002-44b9-99b3-522d4c7250f4
+    health: HEALTH_OK
+            (muted: AUTH_INSECURE_CLIENT_KEY_TYPE AUTH_INSECURE_KEYS_ALLOWED AUTH_INSECURE_KEYS_CREATABLE)
+ 
+  services:
+    mon: 3 daemons, quorum a,b,c (age 23h) [leader: a]
+    mgr: a(active, since 23h), standbys: b
+    osd: 3 osds: 3 up (since 23h), 3 in (since 23h)
+ 
+  data:
+    pools:   2 pools, 33 pgs
+    objects: 1.40k objects, 5.1 GiB
+    usage:   16 GiB used, 134 GiB / 150 GiB avail
+    pgs:     33 active+clean
+ 
+  io:
+    client:   11 MiB/s wr, 0 op/s rd, 690 op/s wr
+ 

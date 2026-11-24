@@ -1,0 +1,45 @@
+setting inter=1s fall=3: 10.90.176.53 marked not-UP after 1.617s
+run=t10-a-inter1s-fall3  profile=payment  target=haproxy:5432  writers=64  rate=1500/s  merchants=1000
+acked=61719  write_errors=32  duration=53.6s  baseline_tx/s=1643  peak_tx/s=1643
+write_outage_s=0.048  (09:46:35.945 -> 09:46:35.994 UTC)
+recovery_to_90pct_s=0.0
+commit_ms_steady: p50=33.14 p95=75.96 p99=81.9 max=106.39
+commit_ms_all: p50=33.14 p95=75.96 p99=81.9 max=106.39
+per_worker_max_gap_s p50=0.149 p95=0.271 max=0.276
+acked_rows_lost=0
+committed_not_acked=0   (in flight at the crash; client saw an error)
+invariants_hold=True  payments=61719 ledger=61719 txn_count=61719  ledger_sum=307180583400 balances_sum=307180583400
+servers: 10.90.177.250 (09:46:35.866..09:47:29.456)
+      32 x OperationalError: SSL connection has been closed unexpectedly
+reads haproxy:5433: ok=107002 miss=99 (0.092%) err=0  read_outage_s=0.006  read_ms p50=1.51 p99=2.8
+reads_by_server={'10.90.135.27': 58980, '10.90.125.92': 48121}  reads_on_write_servers=0
+setting inter=500ms fall=2: 10.90.138.100 marked not-UP after 1.445s
+run=t10-a-inter500ms-fall2  profile=payment  target=haproxy:5432  writers=64  rate=1500/s  merchants=1000
+acked=61065  write_errors=32  duration=52.9s  baseline_tx/s=1648  peak_tx/s=1648
+write_outage_s=0.067  (09:47:54.109 -> 09:47:54.176 UTC)
+recovery_to_90pct_s=0.8
+commit_ms_steady: p50=36.58 p95=75.55 p99=81.17 max=305.49
+commit_ms_all: p50=36.58 p95=75.55 p99=81.17 max=305.49
+per_worker_max_gap_s p50=0.213 p95=0.273 max=0.306
+acked_rows_lost=0
+committed_not_acked=0   (in flight at the crash; client saw an error)
+invariants_hold=True  payments=61065 ledger=61065 txn_count=61065  ledger_sum=306172434884 balances_sum=306172434884
+servers: 10.90.177.250 (09:47:54.109..09:48:46.970)
+      32 x OperationalError: SSL connection has been closed unexpectedly
+reads haproxy:5433: ok=105613 miss=32 (0.03%) err=0  read_outage_s=0.005  read_ms p50=2.37 p99=3.49
+reads_by_server={'10.90.125.92': 78659, '10.90.135.27': 26986}  reads_on_write_servers=0
+setting inter=2s fall=5: 10.90.176.53 marked not-UP after 1.438s
+run=t10-a-inter2s-fall5  profile=payment  target=haproxy:5432  writers=64  rate=1500/s  merchants=1000
+acked=61028  write_errors=32  duration=52.9s  baseline_tx/s=1763  peak_tx/s=1763
+write_outage_s=0.088  (09:49:11.547 -> 09:49:11.636 UTC)
+recovery_to_90pct_s=0.4
+commit_ms_steady: p50=35.43 p95=77.1 p99=82.49 max=268.62
+commit_ms_all: p50=35.43 p95=77.1 p99=82.49 max=268.62
+per_worker_max_gap_s p50=0.216 p95=0.257 max=0.272
+acked_rows_lost=0
+committed_not_acked=0   (in flight at the crash; client saw an error)
+invariants_hold=True  payments=61028 ledger=61028 txn_count=61028  ledger_sum=305898075988 balances_sum=305898075988
+servers: 10.90.177.250 (09:49:11.494..09:50:04.375)
+      32 x OperationalError: SSL connection has been closed unexpectedly
+reads haproxy:5433: ok=105691 miss=11 (0.01%) err=0  read_outage_s=0.007  read_ms p50=2.41 p99=3.52
+reads_by_server={'10.90.125.92': 70897, '10.90.135.27': 34805}  reads_on_write_servers=0

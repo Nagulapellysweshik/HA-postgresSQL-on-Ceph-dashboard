@@ -1,0 +1,29 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 300' role='img' aria-label='T3: planned switchover, client writes per second before and after the PgBouncer fix' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif'>
+<title>T3: planned switchover, client writes per second before and after the PgBouncer fix</title>
+<line x1='56' x2='944' y1='260.0' y2='260.0' stroke='#8884' stroke-width='1'/>
+<text x='48' y='264.0' fill='#8a8f98' font-size='11' text-anchor='end'>0</text>
+<line x1='56' x2='944' y1='203.5' y2='203.5' stroke='#8884' stroke-width='1'/>
+<text x='48' y='207.5' fill='#8a8f98' font-size='11' text-anchor='end'>500</text>
+<line x1='56' x2='944' y1='147.0' y2='147.0' stroke='#8884' stroke-width='1'/>
+<text x='48' y='151.0' fill='#8a8f98' font-size='11' text-anchor='end'>1,000</text>
+<line x1='56' x2='944' y1='90.5' y2='90.5' stroke='#8884' stroke-width='1'/>
+<text x='48' y='94.5' fill='#8a8f98' font-size='11' text-anchor='end'>1,500</text>
+<line x1='56' x2='944' y1='34.0' y2='34.0' stroke='#8884' stroke-width='1'/>
+<text x='48' y='38.0' fill='#8a8f98' font-size='11' text-anchor='end'>2,000</text>
+<text x='56.0' y='276' fill='#8a8f98' font-size='11' text-anchor='middle'>0</text>
+<text x='184.7' y='276' fill='#8a8f98' font-size='11' text-anchor='middle'>10</text>
+<text x='313.4' y='276' fill='#8a8f98' font-size='11' text-anchor='middle'>20</text>
+<text x='442.1' y='276' fill='#8a8f98' font-size='11' text-anchor='middle'>30</text>
+<text x='570.8' y='276' fill='#8a8f98' font-size='11' text-anchor='middle'>40</text>
+<text x='699.5' y='276' fill='#8a8f98' font-size='11' text-anchor='middle'>50</text>
+<text x='828.2' y='276' fill='#8a8f98' font-size='11' text-anchor='middle'>60</text>
+<text x='500.0' y='294' fill='#8a8f98' font-size='11' text-anchor='middle'>seconds (promote at 20)</text>
+<polyline points='56.0,91.1 68.9,90.5 81.7,91.0 94.6,91.2 107.5,89.7 120.3,91.2 133.2,89.5 146.1,91.4 159.0,90.0 171.8,90.6 184.7,91.4 197.6,88.8 210.4,91.9 223.3,89.3 236.2,91.0 249.0,89.7 261.9,90.7 274.8,91.0 287.7,91.5 300.5,90.0 313.4,90.6 326.3,91.0 339.1,120.3 352.0,260.0 364.9,260.0 377.7,260.0 390.6,260.0 403.5,260.0 416.3,260.0 429.2,260.0 442.1,260.0 455.0,260.0 467.8,260.0 480.7,260.0 493.6,260.0 506.4,260.0 519.3,260.0 532.2,260.0 545.0,260.0 557.9,260.0 570.8,260.0 583.7,260.0 596.5,260.0 609.4,260.0 622.3,260.0 635.1,260.0 648.0,260.0 660.9,260.0 673.7,260.0 686.6,260.0 699.5,260.0 712.3,260.0 725.2,254.3 738.1,79.8 751.0,59.3 763.8,58.5 776.7,47.4 789.6,63.3 802.4,71.9 815.3,86.2 828.2,91.2 841.0,89.7 853.9,90.8 866.8,91.0 879.7,90.4 892.5,90.5 905.4,90.2 918.3,90.5 931.1,91.1 944.0,90.8' fill='none' stroke='#ef4444' stroke-width='2' stroke-linejoin='round'/>
+<polyline points='56.0,90.7 68.9,89.9 81.7,91.3 94.6,89.9 107.5,91.0 120.3,89.7 133.2,90.8 146.1,91.3 159.0,90.0 171.8,90.4 184.7,90.3 197.6,90.5 210.4,90.0 223.3,91.1 236.2,90.3 249.0,90.5 261.9,91.1 274.8,90.4 287.7,90.6 300.5,90.3 313.4,90.7 326.3,91.5 339.1,165.3 352.0,260.0 364.9,260.0 377.7,260.0 390.6,260.0 403.5,260.0 416.3,260.0 429.2,260.0 442.1,196.6 455.0,92.1 467.8,83.8 480.7,115.5 493.6,115.8 506.4,83.5 519.3,60.8 532.2,57.7 545.0,62.0 557.9,56.9 570.8,68.0 583.7,83.9 596.5,91.1 609.4,90.5 622.3,89.8 635.1,91.3 648.0,89.8 660.9,91.3 673.7,93.2 686.6,87.3 699.5,91.0 712.3,89.8 725.2,90.8 738.1,90.5 751.0,89.8 763.8,90.4 776.7,91.9 789.6,88.6 802.4,91.9 815.3,90.4 828.2,89.9 841.0,91.2 853.9,89.8 866.8,90.6 879.7,90.2 892.5,90.4 905.4,91.6 918.3,90.2 931.1,90.3 944.0,90.7' fill='none' stroke='#3b82f6' stroke-width='2' stroke-linejoin='round'/>
+<line x1='313.4' x2='313.4' y1='34' y2='260' stroke='#a855f7' stroke-width='1.5' stroke-dasharray='4 3'/>
+<text x='317.4' y='46' fill='#a855f7' font-size='11' text-anchor='start'>cnpg promote</text>
+<line x1='411.2' x2='411.2' y1='34' y2='260' stroke='#a855f7' stroke-width='1.5' stroke-dasharray='4 3'/>
+<text x='415.2' y='59' fill='#a855f7' font-size='11' text-anchor='start'>DB switchover done (7.6 s)</text>
+<rect x='56' y='10' width='12' height='3' fill='#ef4444'/><text x='72' y='15' fill='#8a8f98' font-size='12'>before: server_login_retry 15 s (30.0 s outage)</text>
+<rect x='415' y='10' width='12' height='3' fill='#3b82f6'/><text x='431' y='15' fill='#8a8f98' font-size='12'>after: server_login_retry 1 s (8.0 s outage)</text>
+</svg>

@@ -1,0 +1,67 @@
+{
+  "run": "t7-a-direct",
+  "profile": "payment",
+  "target": "pg-lab-rw:5432",
+  "workers": 1000,
+  "rate": 0.0,
+  "merchants": 1000,
+  "acked": 128450,
+  "write_errors": 24991,
+  "duration_s": 61.7,
+  "baseline_tx_per_s": 2110.5,
+  "peak_tx_per_s": 2496,
+  "median_tx_per_s": 2167,
+  "write_outage_s": 0.117,
+  "outage_from_utc": "09:09:50.194",
+  "outage_to_utc": "09:09:50.311",
+  "recovery_to_90pct_s": null,
+  "commit_ms_steady": {
+    "p50": 25.14,
+    "p95": 40.81,
+    "p99": 55.76,
+    "max": 168.29
+  },
+  "commit_ms_all": {
+    "p50": 25.13,
+    "p95": 40.81,
+    "p99": 55.73,
+    "max": 168.29
+  },
+  "per_worker_max_gap_s": {
+    "p50": 0.0,
+    "p95": 0.093,
+    "max": 0.142
+  },
+  "acked_rows_lost": 0,
+  "lost_ids_sample": [],
+  "committed_not_acked": 0,
+  "invariants": {
+    "payments": 128450,
+    "ledger_rows": 128450,
+    "merchant_txn_count": 128450,
+    "ledger_sum_minor": 641278230415,
+    "balances_sum_minor": 641278230415,
+    "holds": true
+  },
+  "servers": [
+    {
+      "server": "10.90.177.250",
+      "first_utc": "09:08:49.278",
+      "last_utc": "09:09:51.008"
+    }
+  ],
+  "write_errors_by_type": [
+    [
+      "OperationalError: connect failed: FATAL: sorry, too many clients already",
+      12142
+    ],
+    [
+      "OperationalError: connect failed: timeout expired",
+      6917
+    ],
+    [
+      "OperationalError: connect failed: FATAL: remaining connection slots are reserved for roles",
+      5932
+    ]
+  ]
+}

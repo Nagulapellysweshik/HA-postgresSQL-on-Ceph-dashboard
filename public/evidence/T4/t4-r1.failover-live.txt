@@ -1,0 +1,50 @@
+08:42:23.455  Current primary isn't healthy, initiating a failover
+08:42:23.532  Old primary pod not found in managed instances, skipping label demotion
+08:42:23.532  Waiting for all WAL receivers to be down to elect a new primary
+08:42:23.741  Old primary pod not found in managed instances, skipping label demotion
+08:42:23.741  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:23.786  Waiting for all WAL receivers to be down to elect a new primary
+08:42:25.080  Old primary pod not found in managed instances, skipping label demotion
+08:42:25.081  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:25.129  Waiting for all WAL receivers to be down to elect a new primary
+08:42:26.227  Old primary pod not found in managed instances, skipping label demotion
+08:42:26.227  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:26.265  Failing over
+08:42:26.309  Waiting for the new primary to notice the promotion request
+08:42:26.498  Old primary pod not found in managed instances, skipping label demotion
+08:42:26.498  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:27.597  Old primary pod not found in managed instances, skipping label demotion
+08:42:27.597  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:28.688  Old primary pod not found in managed instances, skipping label demotion
+08:42:28.689  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:29.771  Old primary pod not found in managed instances, skipping label demotion
+08:42:29.771  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:30.867  Old primary pod not found in managed instances, skipping label demotion
+08:42:30.867  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:32.014  Old primary pod not found in managed instances, skipping label demotion
+08:42:32.014  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:33.108  Old primary pod not found in managed instances, skipping label demotion
+08:42:33.108  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:34.197  Old primary pod not found in managed instances, skipping label demotion
+08:42:34.197  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:35.297  Old primary pod not found in managed instances, skipping label demotion
+08:42:35.297  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:36.401  Old primary pod not found in managed instances, skipping label demotion
+08:42:36.401  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:37.488  Old primary pod not found in managed instances, skipping label demotion
+08:42:37.488  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:38.576  Old primary pod not found in managed instances, skipping label demotion
+08:42:38.576  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:39.666  Old primary pod not found in managed instances, skipping label demotion
+08:42:39.666  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:40.749  Old primary pod not found in managed instances, skipping label demotion
+08:42:40.749  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:41.836  Old primary pod not found in managed instances, skipping label demotion
+08:42:41.836  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:42.921  Old primary pod not found in managed instances, skipping label demotion
+08:42:42.921  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:44.009  Old primary pod not found in managed instances, skipping label demotion
+08:42:44.009  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:45.224  Old primary pod not found in managed instances, skipping label demotion
+08:42:45.224  There is a switchover or a failover in progress, waiting for the operation to complete
+08:42:45.504  Setting primary label

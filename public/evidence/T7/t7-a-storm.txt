@@ -1,0 +1,30 @@
+== direct -> pg-lab-rw: 1000 clients, max rate, 60 s
+mid-run: client backends on the primary = 
+run=t7-a-direct  profile=payment  target=pg-lab-rw:5432  writers=1000  rate=0/s  merchants=1000
+acked=128450  write_errors=24991  duration=61.7s  baseline_tx/s=2110  peak_tx/s=2496
+write_outage_s=0.117  (09:09:50.194 -> 09:09:50.311 UTC)
+recovery_to_90pct_s=None
+commit_ms_steady: p50=25.14 p95=40.81 p99=55.76 max=168.29
+commit_ms_all: p50=25.13 p95=40.81 p99=55.73 max=168.29
+per_worker_max_gap_s p50=0.0 p95=0.093 max=0.142
+acked_rows_lost=0
+committed_not_acked=0   (in flight at the crash; client saw an error)
+invariants_hold=True  payments=128450 ledger=128450 txn_count=128450  ledger_sum=641278230415 balances_sum=641278230415
+servers: 10.90.177.250 (09:08:49.278..09:09:51.008)
+   12142 x OperationalError: connect failed: FATAL: sorry, too many clients already
+    6917 x OperationalError: connect failed: timeout expired
+    5932 x OperationalError: connect failed: FATAL: remaining connection slots are reserved for roles
+== pooled -> pg-lab-pooler-rw: 1000 clients, max rate, 60 s
+mid-run: client backends on the primary = 41
+run=t7-a-pooled  profile=payment  target=pg-lab-pooler-rw:5432  writers=1000  rate=0/s  merchants=1000
+acked=139208  write_errors=299  duration=61.4s  baseline_tx/s=2632  peak_tx/s=2632
+write_outage_s=0.148  (09:10:12.761 -> 09:10:12.909 UTC)
+recovery_to_90pct_s=8.1
+commit_ms_steady: p50=456.61 p95=606.04 p99=642.8 max=2447.52
+commit_ms_all: p50=456.61 p95=606.04 p99=642.8 max=2447.52
+per_worker_max_gap_s p50=0.685 p95=0.805 max=0.996
+acked_rows_lost=0
+committed_not_acked=0   (in flight at the crash; client saw an error)
+invariants_hold=True  payments=139208 ledger=139208 txn_count=139208  ledger_sum=696093764004 balances_sum=696093764004
+servers: 10.90.177.250 (09:10:12.445..09:11:13.844)
+     299 x OperationalError: connect failed: timeout expired

@@ -1,0 +1,31 @@
+[2026-11-22T08:53:29.948+00:00] primary=pg-lab-1 node=ip-10-90-173-158.ap-south-2.compute.internal -> victim osd.1; load: payment: 64 writers @ 1500 tx/s, 1000 merchants, 16 readers @ 2000/s on haproxy:5433
+[2026-11-22T08:54:02.046+00:00] osd.1 stopped
+[2026-11-22T08:54:03.447+00:00]  health: HEALTH_WARN| osd: 3 osds: 2 up (since 0.419055s), 3 in (since 26h)
+[2026-11-22T08:54:20.505+00:00]  health: HEALTH_WARN| Degraded data redundancy: 2733/8199 objects degraded (33.333%), 33 pgs degraded| osd: 3 osds: 2 up (since 17s), 3 in (since 26h)| pgs: 2733/8199 objects degraded (33.333%)| 33 active+undersized+degraded
+[2026-11-22T08:54:36.984+00:00]  health: HEALTH_WARN| Degraded data redundancy: 2744/8232 objects degraded (33.333%), 33 pgs degraded| osd: 3 osds: 2 up (since 33s), 3 in (since 26h)| pgs: 2744/8232 objects degraded (33.333%)| 33 active+undersized+degraded
+[2026-11-22T08:54:54.159+00:00]  health: HEALTH_WARN| Degraded data redundancy: 2753/8259 objects degraded (33.333%), 33 pgs degraded| osd: 3 osds: 2 up (since 51s), 3 in (since 26h)| pgs: 2753/8259 objects degraded (33.333%)| 33 active+undersized+degraded
+[2026-11-22T08:55:11.336+00:00]  health: HEALTH_WARN| Degraded data redundancy: 2798/8394 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized| osd: 3 osds: 2 up (since 68s), 3 in (since 26h)| pgs: 2798/8394 objects degraded (33.333%)| 33 active+undersized+degraded
+[2026-11-22T08:55:27.878+00:00]  health: HEALTH_WARN| Degraded data redundancy: 2827/8481 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized| osd: 3 osds: 2 up (since 84s), 3 in (since 26h)| pgs: 2827/8481 objects degraded (33.333%)| 33 active+undersized+degraded
+[2026-11-22T08:55:44.316+00:00]  health: HEALTH_WARN| Degraded data redundancy: 2845/8535 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized| osd: 3 osds: 2 up (since 101s), 3 in (since 26h)| pgs: 2845/8535 objects degraded (33.333%)| 33 active+undersized+degraded
+[2026-11-22T08:56:01.010+00:00]  health: HEALTH_WARN| Degraded data redundancy: 2857/8571 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized| osd: 3 osds: 2 up (since 117s), 3 in (since 26h)| pgs: 2857/8571 objects degraded (33.333%)| 33 active+undersized+degraded
+[2026-11-22T08:56:17.503+00:00]  health: HEALTH_WARN| Degraded data redundancy: 2886/8658 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized| osd: 3 osds: 2 up (since 2m), 3 in (since 26h)| pgs: 2886/8658 objects degraded (33.333%)| 33 active+undersized+degraded
+[2026-11-22T08:56:33.980+00:00]  health: HEALTH_WARN| Degraded data redundancy: 2887/8661 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized| osd: 3 osds: 2 up (since 2m), 3 in (since 26h)| pgs: 2887/8661 objects degraded (33.333%)| 33 active+undersized+degraded
+[2026-11-22T08:56:50.748+00:00]  health: HEALTH_WARN| Degraded data redundancy: 2904/8712 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized| osd: 3 osds: 2 up (since 2m), 3 in (since 26h)| pgs: 2904/8712 objects degraded (33.333%)| 33 active+undersized+degraded
+[2026-11-22T08:57:07.229+00:00]  health: HEALTH_WARN| Degraded data redundancy: 2924/8772 objects degraded (33.333%), 33 pgs degraded, 33 pgs undersized| osd: 3 osds: 2 up (since 3m), 3 in (since 26h)| pgs: 2924/8772 objects degraded (33.333%)| 33 active+undersized+degraded
+[2026-11-22T08:57:24.691+00:00] osd.1 started again, operator resumed
+[2026-11-22T08:59:50.012+00:00] HEALTH_OK 145s after the OSD came back
+[2026-11-22T09:00:16.854+00:00] load stopped
+run=t5-r1  profile=payment  target=haproxy:5432  writers=64  rate=1500/s  merchants=1000
+acked=559525  write_errors=0  duration=400.0s  baseline_tx/s=1494  peak_tx/s=1925
+write_outage_s=2.717  (08:59:09.868 -> 08:59:12.586 UTC)
+recovery_to_90pct_s=33.4
+commit_ms_steady: p50=23.46 p95=41.25 p99=64.61 max=1060.78
+commit_ms_all: p50=23.82 p95=45.96 p99=172.87 max=3048.58
+per_worker_max_gap_s p50=2.996 p95=3.014 max=3.054
+acked_rows_lost=0
+committed_not_acked=0   (in flight at the crash; client saw an error)
+invariants_hold=True  payments=559525 ledger=559525 txn_count=559525  ledger_sum=2800346928400 balances_sum=2800346928400
+servers: 10.90.177.250 (08:53:30.841..09:00:10.827)
+reads haproxy:5433: ok=796717 miss=3041 (0.38%) err=3  read_outage_s=0.016  read_ms p50=2.74 p99=11.79
+reads_by_server={'10.90.135.27': 456044, '10.90.125.92': 343714}  reads_on_write_servers=0
+       3 x OperationalError: SSL connection has been closed unexpectedly

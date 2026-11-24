@@ -1,0 +1,80 @@
+{
+  "run": "t5-r1",
+  "profile": "payment",
+  "target": "haproxy:5432",
+  "workers": 64,
+  "rate": 1500.0,
+  "merchants": 1000,
+  "acked": 559525,
+  "write_errors": 0,
+  "duration_s": 400.0,
+  "baseline_tx_per_s": 1494.5,
+  "peak_tx_per_s": 1925,
+  "median_tx_per_s": 1499,
+  "write_outage_s": 2.717,
+  "outage_from_utc": "08:59:09.868",
+  "outage_to_utc": "08:59:12.586",
+  "recovery_to_90pct_s": 33.4,
+  "commit_ms_steady": {
+    "p50": 23.46,
+    "p95": 41.25,
+    "p99": 64.61,
+    "max": 1060.78
+  },
+  "commit_ms_all": {
+    "p50": 23.82,
+    "p95": 45.96,
+    "p99": 172.87,
+    "max": 3048.58
+  },
+  "per_worker_max_gap_s": {
+    "p50": 2.996,
+    "p95": 3.014,
+    "max": 3.054
+  },
+  "acked_rows_lost": 0,
+  "lost_ids_sample": [],
+  "committed_not_acked": 0,
+  "invariants": {
+    "payments": 559525,
+    "ledger_rows": 559525,
+    "merchant_txn_count": 559525,
+    "ledger_sum_minor": 2800346928400,
+    "balances_sum_minor": 2800346928400,
+    "holds": true
+  },
+  "servers": [
+    {
+      "server": "10.90.177.250",
+      "first_utc": "08:53:30.841",
+      "last_utc": "09:00:10.827"
+    }
+  ],
+  "write_errors_by_type": [],
+  "reads": {
+    "target": "haproxy:5433",
+    "readers": 16,
+    "ok": 796717,
+    "miss": 3041,
+    "err": 3,
+    "miss_pct": 0.38,
+    "read_outage_s": 0.016,
+    "read_outage_from_utc": "08:58:13.114",
+    "read_outage_to_utc": "08:58:13.130",
+    "read_ms": {
+      "p50": 2.74,
+      "p99": 11.79
+    },
+    "reads_by_server": {
+      "10.90.135.27": 456044,
+      "10.90.125.92": 343714
+    },
+    "reads_on_write_servers": 0,
+    "errors_by_type": [
+      [
+        "OperationalError: SSL connection has been closed unexpectedly",
+        3
+      ]
+    ]
+  }
+}

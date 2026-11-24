@@ -1,0 +1,54 @@
+{
+  "run": "cap1-r0",
+  "profile": "payment",
+  "target": "pg-lab-rw:5432",
+  "workers": 64,
+  "rate": 0.0,
+  "merchants": 1000,
+  "acked": 139696,
+  "write_errors": 0,
+  "duration_s": 45.2,
+  "baseline_tx_per_s": 3116.5,
+  "peak_tx_per_s": 3409,
+  "median_tx_per_s": 3184,
+  "write_outage_s": 0.123,
+  "outage_from_utc": "06:54:19.681",
+  "outage_to_utc": "06:54:19.804",
+  "recovery_to_90pct_s": 0.2,
+  "commit_ms_steady": {
+    "p50": 19.04,
+    "p95": 30.21,
+    "p99": 39.36,
+    "max": 153.75
+  },
+  "commit_ms_all": {
+    "p50": 18.84,
+    "p95": 29.16,
+    "p99": 37.16,
+    "max": 202.48
+  },
+  "per_worker_max_gap_s": {
+    "p50": 0.169,
+    "p95": 0.181,
+    "max": 0.203
+  },
+  "acked_rows_lost": 0,
+  "lost_ids_sample": [],
+  "committed_not_acked": 0,
+  "invariants": {
+    "payments": 139696,
+    "ledger_rows": 139696,
+    "merchant_txn_count": 139696,
+    "ledger_sum_minor": 698654577350,
+    "balances_sum_minor": 698654577350,
+    "holds": true
+  },
+  "servers": [
+    {
+      "server": "10.90.119.209",
+      "first_utc": "06:54:08.995",
+      "last_utc": "06:54:54.184"
+    }
+  ],
+  "write_errors_by_type": []
+}

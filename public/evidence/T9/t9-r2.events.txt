@@ -1,0 +1,37 @@
+[2026-11-22T09:37:24.685+00:00] load: payment: 64 writers @ 1500 tx/s, 1000 merchants, 64 readers @ 0/s on haproxy:5433
+[2026-11-22T09:37:37.109+00:00] lag: pg-lab-3 replay_lag_ms=10 bytes_behind=3376 pg-lab-2 replay_lag_ms=10 bytes_behind=5208
+[2026-11-22T09:37:43.664+00:00] lag: pg-lab-3 replay_lag_ms=6 bytes_behind=3304 pg-lab-2 replay_lag_ms=1 bytes_behind=3304
+[2026-11-22T09:37:50.263+00:00] lag: pg-lab-3 replay_lag_ms=11 bytes_behind=9504 pg-lab-2 replay_lag_ms=7 bytes_behind=5528
+[2026-11-22T09:37:56.859+00:00] lag: pg-lab-3 replay_lag_ms=8 bytes_behind=4872 pg-lab-2 replay_lag_ms=6 bytes_behind=4624
+[2026-11-22T09:38:03.409+00:00] lag: pg-lab-3 replay_lag_ms=1 bytes_behind=5600 pg-lab-2 replay_lag_ms=9 bytes_behind=5600
+[2026-11-22T09:38:09.965+00:00] lag: pg-lab-3 replay_lag_ms=15 bytes_behind=13872 pg-lab-2 replay_lag_ms=15 bytes_behind=14544
+[2026-11-22T09:38:16.494+00:00] lag: pg-lab-3 replay_lag_ms=13 bytes_behind=8576 pg-lab-2 replay_lag_ms=5 bytes_behind=2592
+[2026-11-22T09:38:23.289+00:00] lag: pg-lab-3 replay_lag_ms=1 bytes_behind=9024 pg-lab-2 replay_lag_ms=1 bytes_behind=9024
+[2026-11-22T09:38:29.829+00:00] lag: pg-lab-3 replay_lag_ms=11 bytes_behind=4640 pg-lab-2 replay_lag_ms=10 bytes_behind=2544
+[2026-11-22T09:38:36.349+00:00] lag: pg-lab-3 replay_lag_ms=9 bytes_behind=9912 pg-lab-2 replay_lag_ms=9 bytes_behind=9912
+[2026-11-22T09:38:43.147+00:00] lag: pg-lab-3 replay_lag_ms=13 bytes_behind=10032 pg-lab-2 replay_lag_ms=11 bytes_behind=8376
+[2026-11-22T09:38:49.736+00:00] lag: pg-lab-3 replay_lag_ms=6 bytes_behind=2880 pg-lab-2 replay_lag_ms=0 bytes_behind=2880
+[2026-11-22T09:38:56.266+00:00] lag: pg-lab-3 replay_lag_ms=5 bytes_behind=2656 pg-lab-2 replay_lag_ms=7 bytes_behind=5968
+[2026-11-22T09:39:02.925+00:00] lag: pg-lab-3 replay_lag_ms=5 bytes_behind=4208 pg-lab-2 replay_lag_ms=5 bytes_behind=4208
+[2026-11-22T09:39:09.526+00:00] lag: pg-lab-3 replay_lag_ms=16 bytes_behind=8936 pg-lab-2 replay_lag_ms=6 bytes_behind=5448
+[2026-11-22T09:39:16.169+00:00] lag: pg-lab-3 replay_lag_ms=10 bytes_behind=8232 pg-lab-2 replay_lag_ms=12 bytes_behind=7200
+[2026-11-22T09:39:22.760+00:00] lag: pg-lab-3 replay_lag_ms=1 bytes_behind=4672 pg-lab-2 replay_lag_ms=7 bytes_behind=4672
+[2026-11-22T09:39:30.621+00:00] lag: pg-lab-3 replay_lag_ms=15 bytes_behind=8152 pg-lab-2 replay_lag_ms=11 bytes_behind=6120
+[2026-11-22T09:39:37.212+00:00] lag: pg-lab-3 replay_lag_ms=6 bytes_behind=5872 pg-lab-2 replay_lag_ms=6 bytes_behind=5872
+[2026-11-22T09:39:43.932+00:00] lag: pg-lab-3 replay_lag_ms=13 bytes_behind=7480 pg-lab-2 replay_lag_ms=11 bytes_behind=7480
+[2026-11-22T09:39:50.656+00:00] lag: pg-lab-3 replay_lag_ms=9 bytes_behind=10624 pg-lab-2 replay_lag_ms=11 bytes_behind=10624
+[2026-11-22T09:39:57.570+00:00] lag: pg-lab-3 replay_lag_ms=6 bytes_behind=4168 pg-lab-2 replay_lag_ms=9 bytes_behind=4168
+[2026-11-22T09:40:09.493+00:00] load stopped
+run=t9-r2  profile=payment  target=haproxy:5432  writers=64  rate=1500/s  merchants=1000
+acked=194196  write_errors=0  duration=157.8s  baseline_tx/s=1330  peak_tx/s=1330
+write_outage_s=0.091  (09:37:25.660 -> 09:37:25.752 UTC)
+recovery_to_90pct_s=0.2
+commit_ms_steady: p50=49.19 p95=66.12 p99=75.64 max=135.54
+commit_ms_all: p50=49.19 p95=66.12 p99=75.64 max=135.54
+per_worker_max_gap_s p50=0.106 p95=0.127 max=0.139
+acked_rows_lost=0
+committed_not_acked=0   (in flight at the crash; client saw an error)
+invariants_hold=True  payments=194196 ledger=194196 txn_count=194196  ledger_sum=971663740129 balances_sum=971663740129
+servers: 10.90.177.250 (09:37:25.660..09:40:03.434)
+reads haproxy:5433: ok=1453728 miss=129 (0.009%) err=0  read_outage_s=0.005  read_ms p50=5.92 p99=20.32
+reads_by_server={'10.90.135.27': 860141, '10.90.125.92': 593716}  reads_on_write_servers=0

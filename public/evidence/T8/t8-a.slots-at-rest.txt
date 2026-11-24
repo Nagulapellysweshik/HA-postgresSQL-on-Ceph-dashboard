@@ -1,0 +1,12 @@
+app|app|client backend|payload|50
+cnpg_pooler_pgbouncer|postgres|client backend||32
+-|-|io worker||3
+-|-|walwriter||1
+streaming_replica|-|walsender|pg-lab-3|1
+streaming_replica|-|walsender|pg-lab-2|1
+-|-|checkpointer||1
+-|-|archiver||1
+postgres|-|logical replication launcher||1
+postgres|postgres|client backend|psql|1
+-|-|background writer||1
+-|-|autovacuum launcher||1

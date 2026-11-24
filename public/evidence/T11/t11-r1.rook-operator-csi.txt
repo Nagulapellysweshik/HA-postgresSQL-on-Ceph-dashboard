@@ -1,0 +1,20 @@
+2026-11-22 08:57:33.038175 I | ceph-csi: successfully updated ceph-csi for clientProfile CR "rook-ceph"
+2026-11-22 08:57:37.140850 I | op-mon: [rook-ceph] saved mon endpoints to config map map[csi-cluster-config-json:[{"clusterID":"rook-ceph","monitors":["172.20.205.221:3300","172.20.75.107:3300","172.2
+2026-11-22 08:57:37.928632 I | ceph-csi: Configuring ceph connection CR "rook-ceph" in namespace "rook-ceph"
+2026-11-22 08:57:37.940898 I | ceph-csi: Successfully updated ceph connection CR "rook-ceph"
+2026-11-22 08:57:37.940911 I | ceph-csi: Creating ceph-csi clientProfile default CR
+2026-11-22 08:57:37.954704 I | ceph-csi: successfully updated ceph-csi for clientProfile CR "rook-ceph"
+2026-11-22 08:57:44.462071 I | ceph-csi: getting CephCluster rook-ceph during CSI key creation in namespace rook-ceph
+2026-11-22 08:57:45.429730 I | cephclient: getting ceph auth key "client.csi-rbd-provisioner.1"
+2026-11-22 08:57:46.069455 I | cephclient: updating ceph auth caps "client.csi-rbd-provisioner.1" to [mon profile rbd, allow command 'osd blocklist' mgr allow rw osd profile rbd]
+2026-11-22 08:57:47.280444 I | cephclient: getting ceph auth key "client.csi-rbd-node.1"
+2026-11-22 08:57:47.837813 I | cephclient: updating ceph auth caps "client.csi-rbd-node.1" to [mon profile rbd mgr allow rw osd profile rbd]
+2026-11-22 08:57:48.989786 I | cephclient: getting ceph auth key "client.csi-cephfs-provisioner.1"
+2026-11-22 08:57:49.592762 I | cephclient: updating ceph auth caps "client.csi-cephfs-provisioner.1" to [mon allow r, allow command 'osd blocklist' mgr allow rw osd allow rw tag cephfs metadata=* mds 
+2026-11-22 08:57:51.195664 I | cephclient: getting ceph auth key "client.csi-cephfs-node.1"
+2026-11-22 08:57:52.049451 I | cephclient: updating ceph auth caps "client.csi-cephfs-node.1" to [mon allow r mgr allow rw osd allow rwx tag cephfs metadata=*, allow rw tag cephfs data=* mds allow rw]
+2026-11-22 08:57:52.985912 I | ceph-csi: created kubernetes csi secrets for cluster "rook-ceph"
+2026-11-22 08:57:52.985938 I | ceph-csi: updating cephCluster rook-ceph cephStatus with CSI cephxStatus in namespace rook-ceph
+2026-11-22 09:00:05.889923 I | exec: Command "ceph" output: "set rook/node/count/with-csi-rbd-plugin"
+2026-11-22 09:00:07.034639 I | exec: Command "ceph" output: "set rook/node/count/with-csi-cephfs-plugin"
+2026-11-22 09:00:07.847227 I | exec: Command "ceph" output: "set rook/node/count/with-csi-nfs-plugin"

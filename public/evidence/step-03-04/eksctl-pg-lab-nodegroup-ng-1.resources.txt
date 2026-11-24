@@ -1,0 +1,3 @@
+LaunchTemplate	AWS::EC2::LaunchTemplate	<launch_template_id>
+ManagedNodeGroup	AWS::EKS::Nodegroup	pg-lab/ng-1
+NodeInstanceRole	AWS::IAM::Role	eksctl-pg-lab-nodegroup-ng-1-NodeInstanceRole-<suffix>

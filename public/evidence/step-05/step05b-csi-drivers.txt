@@ -1,0 +1,11 @@
+# Step 5b: ./install/05b-ceph-csi-drivers.sh  (2026-11-21 15:39 IST), pasted by user
+Release "ceph-csi-drivers" installed, REVISION 1, STATUS deployed
+driver.csi.ceph.io/rook-ceph.rbd.csi.ceph.com
+operatorconfig.csi.ceph.io/ceph-csi-operator-config
+rook-ceph.rbd.csi.ceph.com-ctrlplugin-6dcdffb8c4-twqzt   6/6 Running  ip-10-90-151-24 (2b)
+rook-ceph.rbd.csi.ceph.com-nodeplugin-lnmjt              3/3 Running  ip-10-90-173-158 (2c)
+rook-ceph.rbd.csi.ceph.com-nodeplugin-vcwmb              3/3 Running  ip-10-90-151-24 (2b)
+rook-ceph.rbd.csi.ceph.com-nodeplugin-zbfhn              3/3 Running  ip-10-90-108-58 (2a)
+csidriver rook-ceph.rbd.csi.ceph.com  ATTACHREQUIRED=true PODINFOONMOUNT=true
+csidriver efs.csi.aws.com (EKS-registered, unused)
+Pods Running 15s after install.

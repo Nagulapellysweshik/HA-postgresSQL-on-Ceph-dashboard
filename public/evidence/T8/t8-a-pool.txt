@@ -1,0 +1,100 @@
+== mode=session default_pool_size=20, 500 clients, max rate, 60 s
+pool state mid-run:
+10.90.163.248 cnpg_pgbouncer_pools_cl_active{database="app",user="app"} 25
+10.90.163.248 cnpg_pgbouncer_pools_cl_waiting{database="app",user="app"} 226
+10.90.163.248 cnpg_pgbouncer_pools_sv_active{database="app",user="app"} 25
+10.90.163.248 cnpg_pgbouncer_pools_sv_idle{database="app",user="app"} 0
+10.90.111.242 cnpg_pgbouncer_pools_cl_active{database="app",user="app"} 25
+10.90.111.242 cnpg_pgbouncer_pools_cl_waiting{database="app",user="app"} 224
+10.90.111.242 cnpg_pgbouncer_pools_sv_active{database="app",user="app"} 25
+10.90.111.242 cnpg_pgbouncer_pools_sv_idle{database="app",user="app"} 0
+client backends on the primary: 51
+run=t8-a-session-20  profile=payment  target=pg-lab-pooler-rw:5432  writers=500  rate=0/s  merchants=1000
+acked=169915  write_errors=500  duration=61.1s  baseline_tx/s=3222  peak_tx/s=3222
+write_outage_s=0.067  (09:16:21.829 -> 09:16:21.896 UTC)
+recovery_to_90pct_s=3.1
+commit_ms_steady: p50=16.35 p95=23.34 p99=34.14 max=30197.79
+commit_ms_all: p50=16.35 p95=23.34 p99=34.14 max=30197.79
+per_worker_max_gap_s p50=0.0 p95=0.22 max=0.567
+acked_rows_lost=0
+committed_not_acked=0   (in flight at the crash; client saw an error)
+invariants_hold=True  payments=169915 ledger=169915 txn_count=169915  ledger_sum=850782694596 balances_sum=850782694596
+servers: 10.90.177.250 (09:16:21.539..09:17:22.668)
+     500 x OperationalError: SSL connection has been closed unexpectedly
+== mode=transaction default_pool_size=10, 500 clients, max rate, 60 s
+pool state mid-run:
+10.90.163.248 cnpg_pgbouncer_pools_cl_active{database="app",user="app"} 15
+10.90.163.248 cnpg_pgbouncer_pools_cl_waiting{database="app",user="app"} 232
+10.90.163.248 cnpg_pgbouncer_pools_sv_active{database="app",user="app"} 15
+10.90.163.248 cnpg_pgbouncer_pools_sv_idle{database="app",user="app"} 0
+10.90.111.242 cnpg_pgbouncer_pools_cl_active{database="app",user="app"} 15
+10.90.111.242 cnpg_pgbouncer_pools_cl_waiting{database="app",user="app"} 238
+10.90.111.242 cnpg_pgbouncer_pools_sv_active{database="app",user="app"} 15
+10.90.111.242 cnpg_pgbouncer_pools_sv_idle{database="app",user="app"} 0
+client backends on the primary: 31
+run=t8-a-transaction-10  profile=payment  target=pg-lab-pooler-rw:5432  writers=500  rate=0/s  merchants=1000
+acked=114260  write_errors=0  duration=61.1s  baseline_tx/s=2103  peak_tx/s=2103
+write_outage_s=0.142  (09:18:01.127 -> 09:18:01.269 UTC)
+recovery_to_90pct_s=1.7
+commit_ms_steady: p50=259.44 p95=297.1 p99=312.34 max=1446.87
+commit_ms_all: p50=259.44 p95=297.1 p99=312.34 max=1446.87
+per_worker_max_gap_s p50=0.357 p95=0.428 max=0.519
+acked_rows_lost=0
+committed_not_acked=0   (in flight at the crash; client saw an error)
+invariants_hold=True  payments=114260 ledger=114260 txn_count=114260  ledger_sum=572180610304 balances_sum=572180610304
+servers: 10.90.177.250 (09:18:00.981..09:19:02.130)
+== mode=transaction default_pool_size=20, 500 clients, max rate, 60 s
+pool state mid-run:
+10.90.163.248 cnpg_pgbouncer_pools_cl_active{database="app",user="app"} 20
+10.90.163.248 cnpg_pgbouncer_pools_cl_waiting{database="app",user="app"} 242
+10.90.163.248 cnpg_pgbouncer_pools_sv_active{database="app",user="app"} 20
+10.90.163.248 cnpg_pgbouncer_pools_sv_idle{database="app",user="app"} 0
+10.90.111.242 cnpg_pgbouncer_pools_cl_active{database="app",user="app"} 20
+10.90.111.242 cnpg_pgbouncer_pools_cl_waiting{database="app",user="app"} 218
+10.90.111.242 cnpg_pgbouncer_pools_sv_active{database="app",user="app"} 20
+10.90.111.242 cnpg_pgbouncer_pools_sv_idle{database="app",user="app"} 0
+client backends on the primary: 41
+run=t8-a-transaction-20  profile=payment  target=pg-lab-pooler-rw:5432  writers=500  rate=0/s  merchants=1000
+acked=142056  write_errors=0  duration=61.2s  baseline_tx/s=2709  peak_tx/s=2709
+write_outage_s=0.062  (09:19:38.867 -> 09:19:38.929 UTC)
+recovery_to_90pct_s=6.1
+commit_ms_steady: p50=208.59 p95=252.4 p99=279.92 max=1236.33
+commit_ms_all: p50=208.59 p95=252.4 p99=279.92 max=1236.33
+per_worker_max_gap_s p50=0.29 p95=0.309 max=0.367
+acked_rows_lost=0
+committed_not_acked=0   (in flight at the crash; client saw an error)
+invariants_hold=True  payments=142056 ledger=142056 txn_count=142056  ledger_sum=711296598551 balances_sum=711296598551
+servers: 10.90.177.250 (09:19:38.722..09:20:39.896)
+== mode=transaction default_pool_size=32, 500 clients, max rate, 60 s
+pool state mid-run:
+10.90.163.248 cnpg_pgbouncer_pools_cl_active{database="app",user="app"} 32
+10.90.163.248 cnpg_pgbouncer_pools_cl_waiting{database="app",user="app"} 209
+10.90.163.248 cnpg_pgbouncer_pools_sv_active{database="app",user="app"} 32
+10.90.163.248 cnpg_pgbouncer_pools_sv_idle{database="app",user="app"} 0
+10.90.111.242 cnpg_pgbouncer_pools_cl_active{database="app",user="app"} 32
+10.90.111.242 cnpg_pgbouncer_pools_cl_waiting{database="app",user="app"} 227
+10.90.111.242 cnpg_pgbouncer_pools_sv_active{database="app",user="app"} 32
+10.90.111.242 cnpg_pgbouncer_pools_sv_idle{database="app",user="app"} 0
+client backends on the primary: 65
+run=t8-a-transaction-32  profile=payment  target=pg-lab-pooler-rw:5432  writers=500  rate=0/s  merchants=1000
+acked=195784  write_errors=0  duration=61.0s  baseline_tx/s=3674  peak_tx/s=3674
+write_outage_s=0.087  (09:21:16.645 -> 09:21:16.733 UTC)
+recovery_to_90pct_s=3.3
+commit_ms_steady: p50=149.34 p95=187.63 p99=227.94 max=1492.89
+commit_ms_all: p50=149.34 p95=187.63 p99=227.94 max=1492.89
+per_worker_max_gap_s p50=0.245 p95=0.3 max=0.344
+acked_rows_lost=0
+committed_not_acked=0   (in flight at the crash; client saw an error)
+invariants_hold=True  payments=195784 ledger=195784 txn_count=195784  ledger_sum=980839534111 balances_sum=980839534111
+servers: 10.90.177.250 (09:21:16.477..09:22:17.480)
+== mode=transaction default_pool_size=40, 500 clients, max rate, 60 s
+pool state mid-run:
+10.90.163.248 cnpg_pgbouncer_pools_cl_active{database="app",user="app"} 33
+10.90.163.248 cnpg_pgbouncer_pools_cl_waiting{database="app",user="app"} 216
+10.90.163.248 cnpg_pgbouncer_pools_sv_active{database="app",user="app"} 33
+10.90.163.248 cnpg_pgbouncer_pools_sv_idle{database="app",user="app"} 0
+10.90.111.242 cnpg_pgbouncer_pools_cl_active{database="app",user="app"} 32
+10.90.111.242 cnpg_pgbouncer_pools_cl_waiting{database="app",user="app"} 219
+10.90.111.242 cnpg_pgbouncer_pools_sv_active{database="app",user="app"} 32
+10.90.111.242 cnpg_pgbouncer_pools_sv_idle{database="app",user="app"} 0
+client backends on the primary: 66

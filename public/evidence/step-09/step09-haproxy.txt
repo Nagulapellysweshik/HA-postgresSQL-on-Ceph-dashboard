@@ -1,0 +1,7 @@
+# Step 9: HAProxy stats page (kubectl port-forward svc/haproxy 8404), 2026-11-21 ~20:55 IST, screenshot from user
+HAProxy 3.4, pid 8, uptime 38s, maxconn 4000
+pg_rw frontend  OPEN  sessions total 19 (no clients yet: kubelet tcpSocket readiness probe on 5432 every 2s)
+pg_ro frontend  OPEN  sessions total 0
+poolers_rw: rw1 UP (L4OK 0ms, LbTot 8)  rw2 UP (L4OK 0ms, LbTot 11)  rw3/rw4 MAINT (resolution: spare slots)  backend UP 2/2
+poolers_ro: ro1 UP (L4OK 0ms)           ro2 UP (L4OK 0ms)            ro3/ro4 MAINT (resolution)              backend UP 2/2
+Each UP server Dwn=1: down once at start (init-addr none) until DNS resolved
