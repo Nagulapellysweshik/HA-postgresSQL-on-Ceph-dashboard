@@ -5,6 +5,7 @@ on a fully private Amazon EKS cluster, tested under a payment-shaped workload (p
 connection storm, pool tuning, read/write split, rolling upgrade, point-in-time recovery).
 
 dashboard: https://nagulapellysweshik.github.io/HA-postgresSQL-on-Ceph-dashboard/
+
 Code: https://github.com/Nagulapellysweshik/HA-postgresSQL-on-Ceph
 
 A static React + Vite site, with no backend. Routes use hash URLs (`#/tests/t6-node-loss`), so the build works on any static host.
